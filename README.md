@@ -4,8 +4,8 @@ A dual-module engineering repository covering the fundamental and principles of 
 ## TABLE OF CONTENTS
 * [The Foundation: Electromagnetic Wave Theory](#part-1-analog-frequency-modulation--demodulation)
 * [Part 1: Antenna Systems & Radiators](#part-1-analog-frequency-modulation--demodulation)
-* [Part 2: Sampling and Reconstruction](#part-2-sampling-and-reconstruction)
-* [Results & Data Analysis](#results--data-analysis)
+* [Part 2: Waveguide and its parts](#part-2-sampling-and-reconstruction)
+* [Compilation of Images](#results--data-analysis)
 
 ## The Foundation: Electromagnetic Wave Theory
 All antennas and waveguides in this repository are governed by Maxwell’s Equations. These equations describe how electric fields ($\mathbf{E}$) and magnetic fields ($\mathbf{H}$) interact and propagate through different media.
