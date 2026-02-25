@@ -1,0 +1,2 @@
+# EM-Waveguide-Antenna-Compendium-Theory-Design-and-Pattern
+A dual-module engineering repository covering the fundamental and principles of Electromagnetics. Part 1 explores diverse Antenna topologies (Dipole, Patch, Horn) with a focus on radiation characteristics and impedance matching. Part 2 provides a deep dive into Waveguide theory, detailing mechanical components, mode analysis, and feed structures.
