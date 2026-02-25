@@ -8,6 +8,8 @@ A dual-module engineering repository covering the fundamental and principles of 
 * [Compilation of Images](#results--data-analysis)
 
 ## The Foundation: Electromagnetic Wave Theory
+Electromagnetic (EM) waves are energy-carrying, transverse waves produced by the acceleration of charged particles, such as electrons. They consist of oscillating electric and magnetic fields that are perpendicular to each other and to the direction of propagation. EM waves require no medium and travel through a vacuum at the speed of light.
+
 All antennas and waveguides in this repository are governed by Maxwell’s Equations. These equations describe how electric fields ($\mathbf{E}$) and magnetic fields ($\mathbf{H}$) interact and propagate through different media.
 
 #### The Governing Equations
@@ -52,6 +54,7 @@ The space surrounding an antenna is divided into regions:
 - Reactive Near-Field: Energy is stored, not radiated.
 - Radiating Near-Field (Fresnel): The radiation pattern begins to form.
 - Far-Field (Fraunhofer): The region where the radiation pattern is stable and the waves are approximately planar. This is where communication happens.
+
 The boundary for the far-field is typically defined as:
 $$R > \frac{2D^2}{\lambda}$$
 Where $D$ is the largest dimension of the antenna.
