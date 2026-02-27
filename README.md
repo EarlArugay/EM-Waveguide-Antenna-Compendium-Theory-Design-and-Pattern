@@ -2,10 +2,10 @@
 A dual-module engineering repository covering the fundamental and principles of Electromagnetics. Part 1 explores diverse Antenna topologies (Dipole, Patch, Horn) with a focus on radiation characteristics and impedance matching. Part 2 provides a deep dive into Waveguide theory, detailing mechanical components, mode analysis, and feed structures.
 
 ## TABLE OF CONTENTS
-* [The Foundation: Electromagnetic Wave Theory](#part-1-analog-frequency-modulation--demodulation)
-* [PART 1 : Antenna Systems & Radiators](#part-1--antenna-systems--radiators)
-* [Part 2: Waveguide and its parts](#part-2-sampling-and-reconstruction)
-* [Compilation of Images](#results--data-analysis)
+* [Electromagnetic Wave Theory](#the-foundation-electromagnetic-wave-theory)
+* [Part 1 : Antenna Systems & Radiators](#part-1--antenna-systems--radiators)
+* [Part 2: Waveguide and its parts](#part-2-waveguide-and-its-parts)
+* [Resources](#resources)
 
 ## The Foundation: Electromagnetic Wave Theory
 Electromagnetic (EM) waves are energy-carrying, transverse waves produced by the acceleration of charged particles, such as electrons. They consist of oscillating electric and magnetic fields that are perpendicular to each other and to the direction of propagation. EM waves require no medium and travel through a vacuum at the speed of light.
@@ -609,3 +609,9 @@ Since there is no center wire, waves cannot travel in a straight line like they 
 *Figure 2.1: TE,TM,TEM Propagation Modes.*
 
 
+
+
+
+
+
+## Resources
