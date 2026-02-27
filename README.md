@@ -151,4 +151,100 @@ Figure 1.4: Telescopic Monopole Antenna Propagation Pattern.*
 - Testing & Measurement: Often used with handheld Spectrum Analyzers to "sweep" a room for signals, as the length can be adjusted to find the peak resonance of an unknown transmitter.
 - Emergency Communications: Used in deployable "Go-Kits" for search and rescue or amateur radio (Ham radio) where equipment must be compact but capable of reaching long distances.
 
+### Dipole Antenna (1/4 $\lambda$)
+![Dipole Antenna (1/4 $\lambda$)](Types_of_Antenna/Dipole-Antenna-The-Balanced-Radiator1-4.jpg)
+*Figure 1.5: Center-Fed Half-Wave Dipole Prototype. This design demonstrates a balanced resonant structure. By eliminating the requirement for a conductive ground plane, this antenna provides a toroidal radiation pattern with a characteristic 2.15 dBi gain, serving as the fundamental reference for the other radiators in this compendium.*
+
+#### Theory & Function
+The dipole is the most fundamental and widely used antenna in radio communications. It consists of two poles (conductive rods) oriented end-to-end with a total length usually equal to a half-wavelength ($\lambda/2$).Balanced Feed: Unlike the monopole, which is unbalanced, the dipole is a balanced antenna. Power is fed into the center, where the two rods meet.Resonance: Each arm is approximately $\lambda/4$ in length. When current flows, it reaches the ends of the rods and reflects, creating a standing wave that facilitates radiation.No Ground Plane Required: Because it has two physical poles, it does not rely on a ground plane to function, making it more versatile for mounting high in the air or on non-metallic structures.
+#### Propagation Pattern
+![Dipole Antenna (1/4 $\lambda$)](Types_of_Antenna/Dipole-Antenna-The-Balanced-Radiator-1-4-Propagation-Pattern.jpg)
+
+Figure 1.4: Dipole Antenna (1/4 $\lambda$) Propagation Pattern.*
+- Doughnut Shape (Toroidal): The radiation pattern is omnidirectional in the plane perpendicular to the rods, but it has deep "nulls" (no signal) at the very tips of the rods.
+- Gain: A standard half-wave dipole has a theoretical gain of 2.15 dBi.
+- Polarization: It is linearly polarized. If the rods are horizontal, it is horizontally polarized; if they are vertical, it is vertically polarized.
+#### Industrial Applications
+- Television & Radio: The classic "rabbit ears" on old TVs are adjustable dipoles.
+- Ham Radio: Many amateur radio operators use wire dipoles strung between trees for long-distance communication.Reference Standard: In labs, dipoles are used as the "gold standard" to measure the gain of other, more complex antennas.
+- Antenna Arrays: Many large cell towers use a vertical stack of several dipoles to focus the signal toward the horizon.
+
+### Dipole Antenna (1/2 $\lambda$)
+![Dipole Antenna (1/2 $\lambda$)](Types_of_Antenna/Dipole-Antenna-The-Balanced-Radiator1-2.jpg)
+*Figure 1.5:  Fabricated Half-Wave ($\lambda/2$) Dipole Antenna. This prototype represents the fundamental balanced radiator used in RF engineering. Featuring symmetric arms and center-point feeding, it provides a toroidal radiation pattern and serves as the primary reference standard for gain and directivity measurements.*
+
+#### Theory & Function
+A dipole is a balanced antenna, consisting of two identical conductive elements (arms) oriented end-to-end.
+- Resonant Length: For the antenna to radiate efficiently, its total length must be approximately half of the wavelength ($\lambda/2$) of the signal you are transmitting or receiving.
+- Voltage and Current Distribution: At resonance, the current is at its maximum at the center (feed point) and zero at the ends, while the voltage is at its maximum at the tips.
+- Impedance: A theoretical half-wave dipole in free space has an input impedance of approximately 73 $\Omega$, which is a relatively close match to standard $50\ \Omega$ or $75\ \Omega$ transmission lines.
+#### Propagation Pattern
+![Dipole Antenna (1/2 $\lambda$)](Types_of_Antenna/Dipole-Antenna-The-Balanced-Radiator-1-2-Propagation-Pattern.png)
+
+Figure 1.4: Dipole Antenna (1/2 $\lambda$) Propagation Pattern.*
+- Toroidal (Doughnut) Shape: The dipole radiates energy in a 360° circle perpendicular to the arms. However, it has "nulls" at the ends of the rods where virtually no signal is sent or received.
+- Standard Gain: It has a fixed directive gain of 2.15 dBi. When you see other antennas rated in "dBd," they are being compared directly to this specific antenna.
+- Polarization: It is Linearly Polarized. To communicate effectively, the receiving dipole must be oriented in the same direction (e.g., both vertical or both horizontal).
+#### Industrial Applications
+- Reference Standards: Used in laboratories to calibrate other antennas.
+- Television: The classic "rabbit ears" are a pair of adjustable dipoles.
+- Radio Towers: Many cellular and broadcast towers use "stacks" of dipoles to increase signal strength toward the horizon.
+- Emergency Services: Simple wire dipoles are often used in field deployments for Search and Rescue because they are easy to build and require no ground plane.
+
+### Dipole Antenna (3/2 $\lambda$)
+![Dipole Antenna (3/2 $\lambda$)](Types_of_Antenna/Dipole-Antenna-The-Balanced-Radiator3-2.jpg)
+*Figure 1.5: Center-Fed Half-Wave Dipole Prototype. This design demonstrates a balanced resonant structure. By eliminating the requirement for a conductive ground plane, this antenna provides a toroidal radiation pattern with a characteristic 2.15 dBi gain, serving as the fundamental reference for the other radiators in this compendium.*
+
+#### Theory & Function
+As the physical length of a dipole increases beyond $\lambda/2$, the current distribution along the arms no longer consists of a single "hump."
+- Current Reversal: In a $\frac{3}{2}\lambda$ dipole, the current undergoes phase reversals along the length of the wire. This means there are three distinct regions of maximum current (current loops) rather than one.
+- Higher Radiation Resistance: This antenna typically exhibits a higher radiation resistance compared to a standard half-wave dipole, which affects how it is matched to a $50\ \Omega$ or $75\ \Omega$ feedline.
+- Harmonic Resonance: This antenna is technically a "harmonic" antenna, as it resonates at the third harmonic of its fundamental frequency.
+#### Propagation Pattern
+![Dipole Antenna (3/2 $\lambda$))](Types_of_Antenna/Dipole-Antenna-The-Balanced-Radiator-3-2-Propagation-Pattern.jpg)
+
+Figure 1.4: Dipole Antenna (3/2 $\lambda$) Propagation Pattern.*
+
+![Dipole Antenna (3/2 $\lambda$))](Types_of_Antenna/Dipole-Antenna-The-Balanced-Radiator-1-2-Propagation-Pattern3d.jpg)
+
+Figure 1.4: Dipole Antenna (3/2 $\lambda$) 3D Propagation Pattern.*
+
+This is the most striking difference. Unlike the "doughnut" shape of a standard dipole, the $\frac{3}{2}\lambda$ dipole "breaks" the signal into multiple lobes.
+- Multi-Lobe Pattern: Instead of one broad main lobe, this antenna produces six distinct lobes.
+- Increased Gain: Because the lobes are narrower and more numerous, the antenna can achieve a higher peak gain in certain directions compared to a standard $\lambda/2$ dipole.
+- Angle of Radiation: The main lobes are tilted at an angle toward the ends of the wire rather than being strictly perpendicular to the antenna axis.
+#### Industrial Applications
+- Directional Communications: Used when a designer wants to "steer" the signal into specific angular sectors without using a complex array.
+- Shortwave (HF) Broadcasting: Large-scale wire antennas often use harmonic lengths like $\frac{3}{2}\lambda$ to achieve higher gain for long-distance ionospheric "skip" communications.
+- Multi-band Antennas: Often found in amateur radio setups where a single long wire is used to operate on multiple different frequency bands.
+
+### Folded Dipole Antenna 
+![Folded Dipole Antenna)](Types_of_Antenna/Folded-Dipole-Antenna.jpg)
+*Figure 1.5: Fabricated Folded Dipole Antenna. This prototype utilizes a continuous-loop geometry to achieve a 4:1 impedance transformation relative to a standard dipole. The design is optimized for high-bandwidth applications and serves as a primary driven element for multi-element parasitic arrays.*
+
+#### Theory & Function
+A folded dipole is formed by taking a standard half-wave dipole and connecting a second conductor in parallel.
+- Impedance Transformation: The most notable characteristic is the Impedance Step-Up. A folded dipole has an input impedance roughly four times that of a standard dipole. While a basic dipole is $\approx 73\ \Omega$, a folded dipole provides an impedance of approximately $300\ \Omega$.
+- Increased Bandwidth: The parallel conductors increase the effective "thickness" of the antenna. In RF physics, thicker radiators exhibit lower $Q$ factors, which translates to a wider operating bandwidth. This allows the antenna to maintain a good match across a broader range of frequencies.
+- Folded Current: Because the two arms are in close proximity, the currents in both segments are in phase, contributing equally to the total radiated field.
+#### Propagation Pattern
+![Folded Dipole Antenna )](Types_of_Antenna/Folded-Dipole-Antenna-Radiation-Pattern.jpg)
+
+Figure 1.4: Folded Dipole Antenna Propagation Pattern.*
+
+- Radiation Shape: The propagation pattern remains Toroidal (Doughnut-shaped), identical to a standard half-wave dipole. It radiates 360° perpendicular to the axis of the rods.
+- Directivity/Gain: It maintains a standard gain of approximately 2.15 dBi.
+- Polarization: Linear polarization along the axis of the parallel tubes.
+#### Industrial Applications
+- Television Reception: Historically, the  impedance was a perfect match for "twin-lead" ribbon cables used for rooftop TV antennas.
+- Yagi-Uda Arrays: It is the most common "driven element" in Yagi antennas (like those on old houses). The high impedance of the folded dipole compensates for the impedance-lowering effects caused by the nearby director and reflector elements.
+- FM Radio: Preferred for FM reception because its wider bandwidth can easily cover the entire 88–108 MHz broadcast band without significant signal loss.
+
+
+
+
+
+
+
+
 
