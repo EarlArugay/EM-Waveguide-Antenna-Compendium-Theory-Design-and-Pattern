@@ -261,6 +261,32 @@ The pattern is identical to the Folded Dipole we covered previously.
 - Educational Labs: This is the "receiver" used in classroom experiments. You set up a transmitter, place this detector a few meters away, and rotate it to physically see the voltage change as the antenna pattern moves.
 - EMC Testing: Used to detect "leaky" electronic equipment that might be accidentally broadcasting interference.
 
+### Simple Dipole for Paraboloid Reflector
+![Simple Dipole for Paraboloid Reflector](Types_of_Antenna/Simple-Dipole-for-Paraboloid-Reflector.jpg)
+Figure 1.5: Fabricated 7-Element Yagi-Uda Simple Array. This high-gain configuration features a single reflector, a simple dipole driven element, and five directors. The increased number of parasitic elements results in superior forward directivity and a highly compressed beamwidth, serving as an advanced model for long-range telecommunications study.*
+
+#### Theory & Function
+On its own, this is a standard half-wave ($\lambda/2$) dipole. However, in a laboratory kit, its purpose is to act as the Primary Radiator for a reflector system.
+- The Feed Element: When placed at the focal point of a parabolic dish (the paraboloid), it broadcasts waves toward the dish surface.
+- Collimation: The dish then reflects those waves out in perfectly parallel lines, creating a very narrow, high-energy "pencil beam."
+- Polarization: Since the rod is horizontal in your photo, it creates a Linearly Polarized signal. If you rotate the board $90^{\circ}$, the polarization changes from horizontal to vertical.
+#### Propagation Pattern
+![Simple Dipole for Paraboloid Reflector](Types_of_Antenna/Simple-Dipole-for-Paraboloid-Reflector-Pattern.jpg)
+
+Figure 1.4: Simple Dipole for Paraboloid Reflector Antenna Propagation Pattern.*
+To understand this antenna, you have to look at it in two stages:
+- Stage A: The Dipole Alone
+Without the dish, it has the standard Torus (Doughnut) pattern we discussed at the very beginning. It radiates energy equally in all directions perpendicular to the rod.
+- Stage B: With the Paraboloid (Reflector)
+When you "plug" this dipole into the dish, the pattern changes into a highly directive beam.Main Lobe: A very sharp, narrow spike pointing directly out of the dish.
+- Gain: The gain increases massively (often +20 dBi or more) because the dish "collects" all the energy from the dipole and points it in one direction.
+#### Industrial Applications
+- Satellite TV: The "LNB" at the center of a home satellite dish often uses a small dipole or horn feed similar to this.
+- Deep Space Communication: NASA uses giant versions of this setup to talk to Mars rovers.
+- Microwave Backhaul: Those drum-shaped antennas you see on cell towers use a feed antenna like this inside a protective cover to send data across cities.
+- Radio Telescopes: Astronomers use reflectors fed by dipoles to listen to radio signals from distant stars.
+
+
 ### Phased Array 2-Element (1/4 $\lambda$) Antenna
 ![Phased Array 2-Element (1/4 $\lambda$))](Types_of_Antenna/Phased-Array-2-Element-1-4.jpg)
 Figure 1.5: Fabricated (1/4 $\lambda$) Phased Array Prototype. This system consists of two dipole elements spaced a quarter-wavelength apart. It serves as a practical demonstration of beamforming and spatial interference, showing how phase-shifted signals can be utilized to synthesize a directional radiation pattern.*
@@ -448,7 +474,7 @@ The radiation pattern is a Directive Beam pointing out from the smallest rod (th
 - Search and Rescue: Handheld Yagis are used to find emergency beacons by rotating the antenna until the signal is strongest.
 
 ### 7-Element Yagi-Uda Simple Antenna
-![7-Element Yagi-Uda Simple Antenna)](Types_of_Antenna/7-Element-Yagi-Uda-Simple-Antenna.jpg)
+![7-Element Yagi-Uda Simple Antenna](Types_of_Antenna/7-Element-Yagi-Uda-Simple-Antenna.jpg)
 Figure 1.5: Fabricated 7-Element Yagi-Uda Simple Array. This high-gain configuration features a single reflector, a simple dipole driven element, and five directors. The increased number of parasitic elements results in superior forward directivity and a highly compressed beamwidth, serving as an advanced model for long-range telecommunications study.*
 
 #### Theory & Function
@@ -471,4 +497,51 @@ This antenna produces a highly directive "pencil beam" pattern.
 - Satellite Ground Stations: Used by hobbyists and researchers to communicate with satellites as they pass overhead.
 - Radio Direction Finding (RDF): The narrow beam makes it incredibly accurate for "fox hunting" or locating a hidden transmitter.
 - Fringe Area TV Reception: Used in locations very far from the city to pull in weak broadcast signals.
+
+### Rhombus Antenna
+![Rhombus Antenna](Types_of_Antenna/Rhombus-Antenna.jpg)
+Figure 1.5: Fabricated Rhombus (Diamond) Antenna. This traveling-wave radiator utilizes a non-resonant design to achieve high directivity. By utilizing a termination resistor at the apex, the antenna is converted from a bidirectional to a unidirectional system, providing a high-gain 'pencil beam' suitable for long-range point-to-point links.*
+
+#### Theory & Function
+A Rhombus antenna is essentially two V-antennas joined together. It is a non-resonant traveling-wave antenna, meaning the signal moves along the wires rather than bouncing back and forth like in a dipole.
+- The Diamond Shape: The four sides are typically several wavelengths long. As the current travels along the wires, the radiation from each side combines constructively.
+- Termination: Notice the small resistor at the tip of the diamond. This makes the antenna unidirectional. Without that resistor, the antenna would broadcast in two opposite directions; with it, it broadcasts only forward.
+- High Directivity: Because of its long wire lengths, it naturally focuses energy into a very tight beam.
+
+#### Propagation Pattern
+![Rhombus Antenna](Types_of_Antenna/Rhombus-Antenna-Pattern.gif)
+
+Figure 1.4: Rhombus Antenna Propagation Pattern.*
+The Rhombus antenna produces one of the most "pointed" patterns of any wire-based antenna.
+- Alignment: The main lobe points directly out of the "nose" of the diamond (away from the feed point).
+- Main Lobe: It is extremely narrow, making it excellent for long-distance communication where the target location is fixed.
+- Side Lobes: Because it is a long-wire antenna, you will see several small "minor lobes" alongside the main beam.
+
+#### Industrial Applications
+- Point-to-Point HF Communication: Traditionally used for international shortwave radio because it can "skip" signals off the ionosphere over thousands of miles.
+- Fixed Military Links: Used for secure, long-range communication between fixed bases.
+- Remote Sensing: Used in specialized radar setups to monitor specific patches of the atmosphere or ocean.
+
+### Loop Antenna
+![Loop Antenna](Types_of_Antenna/Loop-Antenna.jpg)
+Figure 1.5: Fabricated Rhombus (Diamond) Antenna. This traveling-wave radiator utilizes a non-resonant design to achieve high directivity. By utilizing a termination resistor at the apex, the antenna is converted from a bidirectional to a unidirectional system, providing a high-gain 'pencil beam' suitable for long-range point-to-point links.*
+
+#### Theory & Function
+A loop antenna is essentially a coil of wire. While most antennas (like dipoles) are "Electric Dipoles," the loop is a Magnetic Dipole.
+- The Magnetic Interface: It is primarily sensitive to the magnetic field ($\mathbf{H}$-field) of the incoming radio wave rather than the electric field ($\mathbf{E}$-field).
+- Inductive Nature: Small loops behave like an inductor. In many lab setups, they are paired with a capacitor to create a "tuned" tank circuit that is extremely sharp at picking up one specific frequency while ignoring everything else.
+- Electrical Size: Based on the PCB, this is likely a "small loop" (where the total length of the wire is less than $1/10$ of a wavelength).
+#### Propagation Pattern 
+![Loop Antenna](Types_of_Antenna/Loop-Antenna-Pattern.jpg)
+
+Figure 1.4: Loop Antenna Propagation Pattern.*
+The loop antenna has a very unique and useful "Figure-8" pattern, but it is different from a dipole.
+- The Donut Hole: The signal is strongest in the plane of the loop (along the edges of the square).
+- The Sharp Null: There is a "dead zone" or null directly through the center of the loop. If you point the "hole" of the loop at a transmitter, the signal will vanish.
+- Bi-directional: It picks up signals equally well from the front and back edges, but ignores signals coming from the sides.
+#### Industrial Applications
+- AM Radio Reception: Almost every AM radio uses a ferrite loop antenna inside the casing.
+- RFID and NFC: Your "tap-to-pay" credit card and phone use a small loop antenna just like this to transfer data over very short distances.
+- Direction Finding: Because the null in the center is so sharp, sailors and pilots used to rotate loop antennas to find the exact direction of a lighthouse or radio beacon.
+- Magnetic Resonance Imaging (MRI): Large-scale loops are used to pick up the tiny magnetic signals from atoms in the human body.
 
