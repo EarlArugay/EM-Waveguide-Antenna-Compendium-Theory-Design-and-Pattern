@@ -524,7 +524,7 @@ The Rhombus antenna produces one of the most "pointed" patterns of any wire-base
 
 ### Loop Antenna
 ![Loop Antenna](Types_of_Antenna/Loop-Antenna.jpg)
-Figure 1.5: Fabricated Rhombus (Diamond) Antenna. This traveling-wave radiator utilizes a non-resonant design to achieve high directivity. By utilizing a termination resistor at the apex, the antenna is converted from a bidirectional to a unidirectional system, providing a high-gain 'pencil beam' suitable for long-range point-to-point links.*
+Figure 1.5: Fabricated Square Loop Antenna. This magnetic dipole element is designed to interface with the H-field component of electromagnetic radiation. It exhibits a characteristic figure-eight radiation pattern with sharp nulls along the loop's axis, making it a primary model for studying inductive coupling, NFC technology, and radio direction finding (RDF) techniques.*
 
 #### Theory & Function
 A loop antenna is essentially a coil of wire. While most antennas (like dipoles) are "Electric Dipoles," the loop is a Magnetic Dipole.
@@ -544,4 +544,50 @@ The loop antenna has a very unique and useful "Figure-8" pattern, but it is diff
 - RFID and NFC: Your "tap-to-pay" credit card and phone use a small loop antenna just like this to transfer data over very short distances.
 - Direction Finding: Because the null in the center is so sharp, sailors and pilots used to rotate loop antennas to find the exact direction of a lighthouse or radio beacon.
 - Magnetic Resonance Imaging (MRI): Large-scale loops are used to pick up the tiny magnetic signals from atoms in the human body.
+
+### Slot Antenna
+![Slot Antenna](Types_of_Antenna/Slot-Antenna.jpg)
+Figure 1.5: Fabricated Slot Antenna. This aperture-type radiator illustrates Babinet's Principle of complementary structures. By exciting a rectangular opening in a conductive plane, the antenna produces a radiation pattern similar to a dipole but with orthogonal polarization. Its low-profile design is representative of antennas used in aerodynamic and conformal surface applications.*
+
+#### Theory & Function
+A slot antenna consists of a metal surface (in this case, the copper on your PCB) with a narrow rectangular slot cut out of it. When you apply an RF voltage across the narrowest part of the slot, it radiates electromagnetic waves.
+- Babinet’s Principle: This is the core theory behind slot antennas. It states that a slot in a conducting plane is "complementary" to a wire dipole of the same dimensions.
+- Radiation Source: Interestingly, the radiation doesn't come from the metal itself, but from the electric field distributed across the opening of the slot.
+- Inverted Polarization: If a vertical wire dipole produces a vertically polarized wave, a vertical slot antenna will produce a horizontally polarized wave. This makes them very useful for changing polarization without rotating the entire structure.
+#### Propagation Pattern
+![Slot Antenna](Types_of_Antenna/Slot-Antenna-Pattern.png)
+
+Figure 1.4: Slot Antenna Propagation Pattern.*
+Because the slot is complementary to a dipole, its radiation pattern is almost identical in shape to the "doughnut" torus, but with one major twist.
+- Omnidirectional (in one plane): Just like a dipole, it radiates equally in all directions perpendicular to the slot.
+- The "Shadow" Effect: Because your antenna is etched on a single-sided PCB, the pattern is slightly more "hemispherical" (radiating more strongly out of the front than through the back of the board).
+- Nulls: There are deep nulls at the very top and bottom ends of the slot where no signal is radiated.
+#### Industrial Applications
+- Aircraft & Spacecraft: Since slot antennas are flat (low profile), they are cut directly into the metal skin of an airplane or rocket. This allows for communication without adding "drag" or sticking out like a wire.
+- Cellular Base Stations: Many of the white rectangular panels on cell towers contain arrays of slots to provide wide, consistent coverage.
+- Microwave Ovens: The "stirrer" or the feed that lets microwaves into the oven cavity is often a slot antenna.
+- Radar: Marine and naval radars often use "slotted waveguides" to create a very wide, rotating beam.
+
+### Ground Plane Antenna
+![Ground Plane Antenna](Types_of_Antenna/Ground-Plane-Antenna.jpg)
+Figure 1.5: Fabricated Ground Plane Antenna. This design utilizes a central feed point supplemented by four radial elements that serve as an artificial ground (counterpoise). This configuration stabilizes the antenna's impedance and provides a $360^{\circ}$ omnidirectional radiation pattern in the horizontal plane, making it a foundational model for mobile and base station communications.*
+
+#### Theory & Function
+A standard monopole antenna needs a large metallic surface (like a car roof or the Earth) to work properly. When that isn't available, we use a Ground Plane Antenna.
+- The Radiator: In a real-world setup, a vertical rod would stand up from the center connector.
+- The Radials: The four diagonal silver strips you see on your PCB are called radials. They act as a "counterpoise," reflecting the radio waves to create a "virtual" second half of the antenna.
+- Impedance Matching: By bending these radials downward (usually at a $45^{\circ}$ angle in 3D versions), engineers can match the antenna's impedance to exactly $50\ \Omega$, which is the standard for most radio equipment.
+#### Propagation Pattern
+![Ground Plane Antenna](Types_of_Antenna/Ground-Plane-Antenna-Pattern.png)
+
+Figure 1.4: Ground Plane Antenna Propagation Pattern.*
+The Ground Plane antenna is Omnidirectional in the horizontal plane but has a specific shape in the vertical plane.
+- Horizontal View (Top-Down): A perfect circle. It radiates equally in all directions ($360^{\circ}$), which is why it is used for broadcast stations.
+- Vertical View (Side-On): It looks like two lobes tilted slightly upward. The radials "push" the signal toward the horizon, which is exactly where you want it for long-distance communication.
+- The "Sky" Null: There is a deep null directly above the antenna. It does not waste energy shooting signal straight up into space.
+#### Industrial Applications
+- Emergency Services: Police and fire department vehicles use these on their roofs to maintain constant communication while moving.
+- Marine Radio: Boats use them because the water acts as a natural ground, but the radials ensure a stable signal even in rough seas.
+- Aviation: Airport towers use ground plane arrays to talk to pilots in every direction.
+- Base Stations: Used for "Citizen's Band" (CB) radio and Ham radio hobbyists.
 
