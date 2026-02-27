@@ -240,6 +240,75 @@ Figure 1.4: Folded Dipole Antenna Propagation Pattern.*
 - Yagi-Uda Arrays: It is the most common "driven element" in Yagi antennas (like those on old houses). The high impedance of the folded dipole compensates for the impedance-lowering effects caused by the nearby director and reflector elements.
 - FM Radio: Preferred for FM reception because its wider bandwidth can easily cover the entire 88–108 MHz broadcast band without significant signal loss.
 
+### Phased Array 2-Element (1/4 $\lambda$)
+![Phased Array 2-Element (1/4 $\lambda$))](Types_of_Antenna/Phased-Array-2-Element-1-4.jpg)
+Figure 1.5: Fabricated (1/4 $\lambda$) Phased Array Prototype. This system consists of two dipole elements spaced a quarter-wavelength apart. It serves as a practical demonstration of beamforming and spatial interference, showing how phase-shifted signals can be utilized to synthesize a directional radiation pattern.*
+
+#### Theory & Function
+A phased array consists of two or more antennas (in this case, two dipoles) powered by the same source, but with a specific phase difference between the signals sent to each element.
+- Constructive & Destructive Interference: By controlling the timing (phase) of the signal, the electromagnetic waves from the two dipoles can be made to add up in one direction (constructive interference) and cancel each other out in another (destructive interference).
+- $\lambda/4$ Spacing: The "1/4 wavelength" in the name refers to the physical distance between the two dipole elements. This specific spacing is critical for achieving a directional radiation pattern (often a "cardioid" or "heart-shaped" pattern).
+- Beamforming: While this prototype has fixed spacing, modern phased arrays use electronic "phase shifters" to change the direction of the signal beam without physically moving the antenna.
+#### Propagation Pattern
+![Phased Array 2-Element (1/4 $\lambda$))](Types_of_Antenna/Phased-Array-2-Element-1-4-Propagation-Pattern.jpg)
+
+Figure 1.4:Phased Array 2-Element (1/4 $\lambda$) Antenna Propagation Pattern.*
+
+- Directional Beam: Unlike a single dipole that radiates 360°, this array focuses energy in a specific direction.
+- Front-to-Back Ratio: One of the key metrics for this antenna is how much more signal it sends forward compared to what "leaks" out the back.
+- Main Lobe: It produces a "Main Lobe" in the direction of constructive interference and "Nulls" where the signals cancel out.
+#### Industrial Applications
+- Radar Systems: This is the core technology behind modern military and weather radar. It allows the radar to "scan" the sky at lightning speed.
+- 5G Base Stations: 5G uses "Massive MIMO" phased arrays to point high-speed data beams directly at individual smartphones, rather than broadcasting to the whole city.
+- Starlink & Satellite Internet: The flat dishes used for satellite internet are sophisticated phased arrays that track satellites moving across the sky without a motor.
+- Aviation: Used in Instrument Landing Systems (ILS) to provide a precise directional path for aircraft to follow during landing.
+
+### Phased Array 2-Element (1/2 $\lambda$)
+![Phased Array 2-Element (1/2 $\lambda$))](Types_of_Antenna/Phased-Array-2-Element-1-2.jpg)
+Figure 1.5: Fabricated $\lambda/2$ Phased Array Prototype. By utilizing half-wavelength spatial separation between radiators, this system demonstrates broadside directivity and high-gain bi-directional propagation. This model is essential for studying the transition from cardioid to multi-lobe interference patterns in array synthesis.*
+
+#### Theory & Function
+In this configuration, the two dipole elements are spaced exactly half a wavelength ($\lambda/2$) apart.
+- Phase Interference: Because the distance between the elements has doubled compared to your previous array, the timing (phase) at which waves from one rod reach the other is shifted by $180^\circ$.
+- Array Factor: In antenna theory, the spacing relative to the wavelength determines the "Array Factor." At $\lambda/2$ spacing, the interference creates a more symmetrical but highly focused set of lobes.
+- Mutual Coupling: The elements are far enough apart to reduce "mutual coupling" (where one antenna's field messes with the other's impedance) compared to the $\lambda/4$ version, often making it easier to feed.
+#### Propagation Pattern
+![Phased Array 2-Element (1/2 $\lambda$))](Types_of_Antenna/Phased-Array-2-Element-1-2-Propagation-Pattern.jpg)
+
+Figure 1.4: Phased Array 2-Element (1/2 $\lambda$) Antenna Propagation Pattern.*
+The 2D pattern for $\lambda/2$ spacing (with elements fed in phase) is typically a Bi-directional pattern.
+- Main Lobes: It produces two strong lobes perpendicular to the line connecting the two antennas (Broadside).
+- Sharp Nulls: It creates very sharp "dead zones" along the axis of the array.
+- Directivity: It is more "squeezed" than a single dipole, meaning it has higher gain in its two primary directions, but it loses the "heart-shaped" single-direction focus of the $\lambda/4$ array.
+#### Industrial Applications
+- Point-to-Point Links: Used to connect two fixed locations (like two buildings) while ignoring noise coming from the sides.
+- Broadside Arrays: This is the basic building block for massive antenna "curtains" used in high-power shortwave radio broadcasting.
+- Radio Astronomy: Used in interferometer arrays to create highly sensitive "viewing" windows into specific parts of the sky.
+- Search Radar: Older radar systems used this spacing to create narrow vertical "fans" of energy to detect aircraft altitude.
+
+### Combined Collinear Array 
+![Combined Collinear Array )](Types_of_Antenna/Combined-Collinear-Array.jpg)
+Figure 1.5: Fabricated Combined Collinear Array. This prototype features vertically stacked dipole elements integrated onto a single feed-board. By synchronizing the phase of multiple radiators, the design achieves high omnidirectional gain by compressing the vertical beamwidth, making it an ideal model for terrestrial base station analysis.*
+
+#### Theory & Function
+A collinear array consists of two or more dipole elements (the horizontal rods in your photo) arranged in a straight line—specifically, stacked on top of each other.
+- Vertical Stacking: By "stacking" the radiators, the antenna system compresses the radiation pattern. Instead of a broad "doughnut," the energy is squeezed into a very thin, flat disk.
+- In-Phase Feeding: The "combined" part of the name refers to the internal wiring on the green PCB. It ensures that both the top and bottom dipoles receive the signal at the exact same time (in-phase).
+- Aperture Synthesis: Stacking antennas increases the "effective aperture." In simple terms, the more vertical space the antenna occupies, the better it can "capture" or "project" a signal toward the horizon.
+#### Propagation Pattern
+![Combined Collinear Array )](Types_of_Antenna/Combined-Collinear-Array-Pattern.png)
+
+Figure 1.4:Combined Collinear Array Antenna Propagation Pattern.*
+The 2D pattern for a collinear array is Omnidirectional in the horizontal plane, but highly Directional in the vertical plane.
+- Flattened Toroid: Imagine taking the standard "doughnut" of a single dipole and stepping on it. The pattern becomes a very flat, high-gain disk.
+- High Gain: Because energy that would have gone into the sky or the ground is redirected toward the horizon, the "gain" (signal reach) is significantly higher than a single dipole.
+- Narrow Vertical Beamwidth: The more elements you stack, the thinner the "pancake" of signal becomes. This requires the antenna to be mounted perfectly level to work effectively.
+#### Industrial Applications
+- Base Stations: This is the most common design for police, fire, and ambulance dispatch towers. It provides $360^{\circ}$ coverage of a city while maximizing range.
+- Wi-Fi "High-Gain" Antennas: Those long, thin antennas you see on high-end routers or outdoor access points are often collinear arrays inside a plastic tube.
+- Air Traffic Control: Used to communicate with aircraft at long distances while they are at a specific altitude.
+- Marine Radio: Used on ships to ensure the signal reaches the horizon across the water without wasting energy pointing at the sky.
+
 
 
 
