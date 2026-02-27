@@ -3,7 +3,7 @@ A dual-module engineering repository covering the fundamental and principles of 
 
 ## TABLE OF CONTENTS
 * [The Foundation: Electromagnetic Wave Theory](#part-1-analog-frequency-modulation--demodulation)
-* [Part 1: Antenna Systems & Radiators](#part-1-analog-frequency-modulation--demodulation)
+* [PART 1 : Antenna Systems & Radiators](#part-1--antenna-systems--radiators)
 * [Part 2: Waveguide and its parts](#part-2-sampling-and-reconstruction)
 * [Compilation of Images](#results--data-analysis)
 
@@ -588,4 +588,24 @@ The Ground Plane antenna is Omnidirectional in the horizontal plane but has a sp
 - Base Stations: Used for "Citizen's Band" (CB) radio and Ham radio hobbyists.
 
 ## Part 2: Waveguide and its parts
+Waveguides represent the primary medium for low-loss, high-power microwave transmission. By constraining electromagnetic fields within a hollow metallic structure, we eliminate radiation leakage and dielectric losses. Understanding the cutoff frequency and the $TE_{10}$ propagation mode is essential for analyzing the passive components found in X-band microwave benches.
+### Fundamentals of Waveguides
+#### The Geometry of Guidance
+Unlike a standard cable with two conductors (signal and ground), a waveguide is a single-conductor hollow pipe. Because it is enclosed, it completely contains the electromagnetic field, preventing radiation loss and protecting the signal from outside interference.
+- X-Band Standard: Most laboratory kits like yours use "X-band" waveguides, which have a rectangular opening of roughly 22.86 mm x 10.16 mm.
+- Aperture Dimensions: The wide dimension is usually labeled as $a$ and the narrow dimension as $b$. The relationship between these determines which frequencies can pass through.
+#### Cutoff Frequency ($f_c$)
+A waveguide acts as a High-Pass Filter. It will only transmit signals if the wavelength is small enough to "fit" inside the pipe.
+- The Limit: If the frequency is too low (the wavelength is too long), the wave cannot propagate and simply dies out.
+- Calculation: For the most common mode in a rectangular waveguide, the cutoff wavelength is $\lambda_c = 2a$. Any signal with a wavelength longer than twice the width of the guide will not pass.
+### Propagation Modes (TE vs. TM)
+Since there is no center wire, waves cannot travel in a straight line like they do in a coax cable. Instead, they "bounce" off the internal walls in specific patterns called modes.TE (Transverse Electric): The electric field is entirely perpendicular to the direction of travel. 
+- The $TE_{10}$ mode is the standard "dominant mode" used in almost all microwave engineering.
+- TM (Transverse Magnetic): The magnetic field is entirely perpendicular to the direction of travel.
+- TEM (Transverse Electromagnetic): This mode cannot exist in a hollow waveguide because it requires two separate conductors (like a coaxial cable).
+
+![antenna field regions](Waveguide/TE-TM-TEM.png)
+
+*Figure 2.1: TE,TM,TEM Propagation Modes.*
+
 
