@@ -58,18 +58,14 @@ The space surrounding an antenna is divided into regions:
 The boundary for the far-field is typically defined as:
 $$R > \frac{2D^2}{\lambda}$$
 Where $D$ is the largest dimension of the antenna.
+![antenna field regions](Types_of_Antenna/antenna-field-regions.webp)
 
-![Calibration Waveform](Waveform_Captures/Part1_Results/Part1_resultfig4.jpeg)
-*Figure 1.2.1: Internal CAL signal showing the verified 1Vp-p square wave.*
-![Calibration Waveform](Waveform_Captures/Part1_Results/Part1_resultfig4.jpeg)
-*Figure 1.2.1: Internal CAL signal showing the verified 1Vp-p square wave.*
-![Calibration Waveform](Waveform_Captures/Part1_Results/Part1_resultfig4.jpeg)
-*Figure 1.2.1: Internal CAL signal showing the verified 1Vp-p square wave.*
+*Figure 1.1: Antenna Field Regions.*
 
 ## Different types of Antenna 
 ### Axial-Mode Helical Antenna
 ![Axial-Mode Helical Antenna](Types_of_Antenna/Axial-Mode-Helical-Antenna.jpg)
-*Figure 1.1: Fabricated Axial-Mode Helical Antenna. Designed for circular polarization and directional high-gain performance. The design features a helical radiator supported by a dielectric central column over a truncated octagonal ground plane.*
+*Figure 1.2: Fabricated Axial-Mode Helical Antenna. Designed for circular polarization and directional high-gain performance. The design features a helical radiator supported by a dielectric central column over a truncated octagonal ground plane.*
 
 #### Theory and Function
 The Helical antenna consists of a conducting wire wound in the form of a screw thread (helix).
@@ -78,7 +74,7 @@ The Helical antenna consists of a conducting wire wound in the form of a screw t
 - Circular Polarization: One of the most unique properties of this antenna is that it naturally produces Circular Polarization (CP). Because the current travels in a circle while moving forward, the resulting electromagnetic wave "twists" as it travels.
 #### Propagation Pattern
 ![Axial-Mode Helical Antenna](Types_of_Antenna/Axial-Mode-Helical-Antenna-Propagation-Pattern2.jpg)
-*Figure 1.2: Fabricated Axial-Mode Helical Antenna Propagation Pattern.*
+*Figure 1.3: Fabricated Axial-Mode Helical Antenna Propagation Pattern.*
 The radiation pattern for this specific configuration is Directional.
 - Main Lobe: A broad beam directed straight out from the top of the coil.
 - Polarization: Right-Hand Circular Polarization (RHCP) or Left-Hand Circular Polarization (LHCP), depending on the direction of the winding.
@@ -92,7 +88,7 @@ Due to its circular polarization, the Helical antenna is the industry standard f
 
 ### Microstrip Patch Antennas (Planar Radiators)
 ![Microstrip Patch Antennas (Planar Radiators)](Types_of_Antenna/Microstrip-Patch-Antennas-(Planar-Radiators)2.jpg)
-*Figure 1.3: Matched Pair of Rectangular Microstrip Patch Antennas. Planar radiators etched on an FR-4 substrate. These prototypes demonstrate the low-profile advantages of patch technology, commonly utilized in phased arrays and integrated wireless systems.*
+*Figure 1.4: Matched Pair of Rectangular Microstrip Patch Antennas. Planar radiators etched on an FR-4 substrate. These prototypes demonstrate the low-profile advantages of patch technology, commonly utilized in phased arrays and integrated wireless systems.*
 #### Theory & Function
 A Microstrip Patch antenna consists of a radiating "patch" of metal on one side of a dielectric substrate (the green PCB) with a continuous ground plane on the other side.
 - The Radiating Element: The metallic rectangular area is usually $\lambda/2$ in length. Radiation occurs primarily from the "fringing fields" at the edges of the patch.
@@ -101,7 +97,7 @@ A Microstrip Patch antenna consists of a radiating "patch" of metal on one side 
 #### Propagation Pattern
 ![Microstrip Patch Antennas (Planar Radiators)](Types_of_Antenna/Microstrip-Patch-Antennas-(Planar-Radiators)-Propagation-Pattern.jpg)
 
-*Figure 1.4: Microstrip Patch Antennas (Planar Radiators) Propagation Pattern.*
+*Figure 1.5: Microstrip Patch Antennas (Planar Radiators) Propagation Pattern.*
 Microstrip patches are Semi-Directional.
 - Main Lobe: They radiate primarily into the "upper half-space" (perpendicular to the board).
 - Back-Radiation: The ground plane on the bottom significantly reduces radiation behind the antenna, making it ideal for mounting on flat surfaces.
@@ -114,7 +110,7 @@ Because they are flat, lightweight, and can be manufactured using standard PCB p
 
 ### Quarter-Wave Monopole Antenna
 ![Quarter-Wave Monopole Antenna](Types_of_Antenna/Quarter-Wave-Monopole-Antenna.jpg)
-*Figure 1.3: Fabricated Quarter-Wave Monopole Antenna. This prototype features a rigid metallic radiator mounted to a custom PCB feed-point. It is designed for omnidirectional coverage, utilizing the ground plane reflection to achieve dipole-equivalent radiation characteristics.*
+*Figure 1.6: Fabricated Quarter-Wave Monopole Antenna. This prototype features a rigid metallic radiator mounted to a custom PCB feed-point. It is designed for omnidirectional coverage, utilizing the ground plane reflection to achieve dipole-equivalent radiation characteristics.*
 #### Theory & Function
 A Monopole antenna is a single-element radiator that functions as one-half of a dipole. To operate correctly, it must be mounted over a Conductive Ground Plane.
 - Method of Images: The ground plane acts like a mirror, creating a "virtual" image of the rod below the surface. This creates an effective dipole structure.
@@ -122,7 +118,7 @@ A Monopole antenna is a single-element radiator that functions as one-half of a 
 #### Propagation Pattern
 ![Quarter-Wave Monopole Antenna](Types_of_Antenna/Quarter-Wave-Monopole-Antenna-Propagation-Pattern.jpg)
 
-*Figure 1.4: Quarter-Wave Monopole Antenna Propagation Pattern.*
+*Figure 1.7: Quarter-Wave Monopole Antenna Propagation Pattern.*
 - Pattern Shape: It produces an Omnidirectional pattern in the horizontal plane (the azimuth).
 - Null Point: There is a distinct "null" directly off the tip of the rod, meaning it does not radiate energy straight up along its axis.
 - Polarization: It is vertically polarized, meaning the E-field oscillates up and down.
@@ -133,7 +129,7 @@ A Monopole antenna is a single-element radiator that functions as one-half of a 
 
 ### Telescopic Monopole Antenna
 ![Telescopic Monopole Antenna](Types_of_Antenna/Telescopic-Monopole-Antenna.jpg)
-*Figure 1.4: Fabricated Telescopic Monopole Prototype. This design utilizes a multi-section adjustable radiator to demonstrate frequency tunability and bandwidth optimization. It serves as a practical model for studying the relationship between physical aperture length and resonant frequency.*
+*Figure 1.8: Fabricated Telescopic Monopole Prototype. This design utilizes a multi-section adjustable radiator to demonstrate frequency tunability and bandwidth optimization. It serves as a practical model for studying the relationship between physical aperture length and resonant frequency.*
 #### Theory & Function
 The telescopic monopole operates on the same quarter-wave ($\lambda/4$) principle as the rigid monopole, but it is composed of several nested metallic tubes.
 - Frequency Agility (Tunability): This is its most important feature. Since the resonant frequency of a monopole is inversely proportional to its length ($f \propto 1/L$), sliding the sections in or out allows the user to manually "tune" the antenna to different frequencies.
@@ -142,7 +138,7 @@ The telescopic monopole operates on the same quarter-wave ($\lambda/4$) principl
 #### Propagation Pattern
 ![Telescopic Monopole Antenna](Types_of_Antenna/Quarter-Wave-Monopole-Antenna-Propagation-Pattern.jpg)
 
-Figure 1.4: Telescopic Monopole Antenna Propagation Pattern.*
+*Figure 1.9: Telescopic Monopole Antenna Propagation Pattern.*
 - Radiation Shape: Like all monopoles, it produces an Omnidirectional pattern in the azimuth ($360^\circ$ coverage).
 - Elevation Sensitivity: As you extend the antenna beyond $\lambda/4$ (for example, to $5\lambda/8$), the radiation pattern flattens, focusing more energy toward the horizon and increasing the gain.
 - Polarization: Stays strictly vertical. If the antenna is tilted, the polarization shifts, which can lead to signal loss (polarization mismatch).
@@ -153,14 +149,14 @@ Figure 1.4: Telescopic Monopole Antenna Propagation Pattern.*
 
 ### Dipole Antenna (1/4 $\lambda$)
 ![Dipole Antenna (1/4 $\lambda$)](Types_of_Antenna/Dipole-Antenna-The-Balanced-Radiator1-4.jpg)
-*Figure 1.5: Center-Fed Half-Wave Dipole Prototype. This design demonstrates a balanced resonant structure. By eliminating the requirement for a conductive ground plane, this antenna provides a toroidal radiation pattern with a characteristic 2.15 dBi gain, serving as the fundamental reference for the other radiators in this compendium.*
+*Figure 1.10: Center-Fed Half-Wave Dipole Prototype. This design demonstrates a balanced resonant structure. By eliminating the requirement for a conductive ground plane, this antenna provides a toroidal radiation pattern with a characteristic 2.15 dBi gain, serving as the fundamental reference for the other radiators in this compendium.*
 
 #### Theory & Function
 The dipole is the most fundamental and widely used antenna in radio communications. It consists of two poles (conductive rods) oriented end-to-end with a total length usually equal to a half-wavelength ($\lambda/2$).Balanced Feed: Unlike the monopole, which is unbalanced, the dipole is a balanced antenna. Power is fed into the center, where the two rods meet.Resonance: Each arm is approximately $\lambda/4$ in length. When current flows, it reaches the ends of the rods and reflects, creating a standing wave that facilitates radiation.No Ground Plane Required: Because it has two physical poles, it does not rely on a ground plane to function, making it more versatile for mounting high in the air or on non-metallic structures.
 #### Propagation Pattern
 ![Dipole Antenna (1/4 $\lambda$)](Types_of_Antenna/Dipole-Antenna-The-Balanced-Radiator-1-4-Propagation-Pattern.jpg)
 
-Figure 1.4: Dipole Antenna (1/4 $\lambda$) Propagation Pattern.*
+Figure 1.11: Dipole Antenna (1/4 $\lambda$) Propagation Pattern.*
 - Doughnut Shape (Toroidal): The radiation pattern is omnidirectional in the plane perpendicular to the rods, but it has deep "nulls" (no signal) at the very tips of the rods.
 - Gain: A standard half-wave dipole has a theoretical gain of 2.15 dBi.
 - Polarization: It is linearly polarized. If the rods are horizontal, it is horizontally polarized; if they are vertical, it is vertically polarized.
@@ -171,7 +167,7 @@ Figure 1.4: Dipole Antenna (1/4 $\lambda$) Propagation Pattern.*
 
 ### Dipole Antenna (1/2 $\lambda$)
 ![Dipole Antenna (1/2 $\lambda$)](Types_of_Antenna/Dipole-Antenna-The-Balanced-Radiator1-2.jpg)
-*Figure 1.5:  Fabricated Half-Wave ($\lambda/2$) Dipole Antenna. This prototype represents the fundamental balanced radiator used in RF engineering. Featuring symmetric arms and center-point feeding, it provides a toroidal radiation pattern and serves as the primary reference standard for gain and directivity measurements.*
+Figure 1.12:  Fabricated Half-Wave ($\lambda/2$) Dipole Antenna. This prototype represents the fundamental balanced radiator used in RF engineering. Featuring symmetric arms and center-point feeding, it provides a toroidal radiation pattern and serves as the primary reference standard for gain and directivity measurements.*
 
 #### Theory & Function
 A dipole is a balanced antenna, consisting of two identical conductive elements (arms) oriented end-to-end.
@@ -181,7 +177,7 @@ A dipole is a balanced antenna, consisting of two identical conductive elements 
 #### Propagation Pattern
 ![Dipole Antenna (1/2 $\lambda$)](Types_of_Antenna/Dipole-Antenna-The-Balanced-Radiator-1-2-Propagation-Pattern.png)
 
-Figure 1.4: Dipole Antenna (1/2 $\lambda$) Propagation Pattern.*
+Figure 1.13: Dipole Antenna (1/2 $\lambda$) Propagation Pattern.*
 - Toroidal (Doughnut) Shape: The dipole radiates energy in a 360° circle perpendicular to the arms. However, it has "nulls" at the ends of the rods where virtually no signal is sent or received.
 - Standard Gain: It has a fixed directive gain of 2.15 dBi. When you see other antennas rated in "dBd," they are being compared directly to this specific antenna.
 - Polarization: It is Linearly Polarized. To communicate effectively, the receiving dipole must be oriented in the same direction (e.g., both vertical or both horizontal).
@@ -193,7 +189,7 @@ Figure 1.4: Dipole Antenna (1/2 $\lambda$) Propagation Pattern.*
 
 ### Dipole Antenna (3/2 $\lambda$)
 ![Dipole Antenna (3/2 $\lambda$)](Types_of_Antenna/Dipole-Antenna-The-Balanced-Radiator3-2.jpg)
-*Figure 1.5: Center-Fed Half-Wave Dipole Prototype. This design demonstrates a balanced resonant structure. By eliminating the requirement for a conductive ground plane, this antenna provides a toroidal radiation pattern with a characteristic 2.15 dBi gain, serving as the fundamental reference for the other radiators in this compendium.*
+*Figure 1.14: Center-Fed Half-Wave Dipole Prototype. This design demonstrates a balanced resonant structure. By eliminating the requirement for a conductive ground plane, this antenna provides a toroidal radiation pattern with a characteristic 2.15 dBi gain, serving as the fundamental reference for the other radiators in this compendium.*
 
 #### Theory & Function
 As the physical length of a dipole increases beyond $\lambda/2$, the current distribution along the arms no longer consists of a single "hump."
@@ -203,11 +199,11 @@ As the physical length of a dipole increases beyond $\lambda/2$, the current dis
 #### Propagation Pattern
 ![Dipole Antenna (3/2 $\lambda$))](Types_of_Antenna/Dipole-Antenna-The-Balanced-Radiator-3-2-Propagation-Pattern.jpg)
 
-Figure 1.4: Dipole Antenna (3/2 $\lambda$) Propagation Pattern.*
+Figure 1.15: Dipole Antenna (3/2 $\lambda$) Propagation Pattern.*
 
 ![Dipole Antenna (3/2 $\lambda$))](Types_of_Antenna/Dipole-Antenna-The-Balanced-Radiator-1-2-Propagation-Pattern3d.jpg)
 
-Figure 1.4: Dipole Antenna (3/2 $\lambda$) 3D Propagation Pattern.*
+Figure 1.16: Dipole Antenna (3/2 $\lambda$) 3D Propagation Pattern.*
 
 This is the most striking difference. Unlike the "doughnut" shape of a standard dipole, the $\frac{3}{2}\lambda$ dipole "breaks" the signal into multiple lobes.
 - Multi-Lobe Pattern: Instead of one broad main lobe, this antenna produces six distinct lobes.
@@ -220,7 +216,7 @@ This is the most striking difference. Unlike the "doughnut" shape of a standard 
 
 ### Folded Dipole Antenna 
 ![Folded Dipole Antenna)](Types_of_Antenna/Folded-Dipole-Antenna.jpg)
-*Figure 1.5: Fabricated Folded Dipole Antenna. This prototype utilizes a continuous-loop geometry to achieve a 4:1 impedance transformation relative to a standard dipole. The design is optimized for high-bandwidth applications and serves as a primary driven element for multi-element parasitic arrays.*
+*Figure 1.17: Fabricated Folded Dipole Antenna. This prototype utilizes a continuous-loop geometry to achieve a 4:1 impedance transformation relative to a standard dipole. The design is optimized for high-bandwidth applications and serves as a primary driven element for multi-element parasitic arrays.*
 
 #### Theory & Function
 A folded dipole is formed by taking a standard half-wave dipole and connecting a second conductor in parallel.
@@ -230,7 +226,7 @@ A folded dipole is formed by taking a standard half-wave dipole and connecting a
 #### Propagation Pattern
 ![Folded Dipole Antenna )](Types_of_Antenna/Folded-Dipole-Antenna-Radiation-Pattern.jpg)
 
-Figure 1.4: Folded Dipole Antenna Propagation Pattern.*
+*Figure 1.18: Folded Dipole Antenna Propagation Pattern.*
 
 - Radiation Shape: The propagation pattern remains Toroidal (Doughnut-shaped), identical to a standard half-wave dipole. It radiates 360° perpendicular to the axis of the rods.
 - Directivity/Gain: It maintains a standard gain of approximately 2.15 dBi.
@@ -242,7 +238,7 @@ Figure 1.4: Folded Dipole Antenna Propagation Pattern.*
 
 ### Folded Dipole with Detector Antenna
 ![Folded Dipole with Detector )](Types_of_Antenna/Folded-Dipole-with-Detector.jpg)
-Figure 1.5: Folded Dipole with Integrated Diode Detector. This specialized receiving element incorporates a rectification circuit to convert incident RF energy into a measurable DC voltage. It serves as a diagnostic tool for analyzing radiation patterns and verifying field strength.*
+*Figure 1.19: Folded Dipole with Integrated Diode Detector. This specialized receiving element incorporates a rectification circuit to convert incident RF energy into a measurable DC voltage. It serves as a diagnostic tool for analyzing radiation patterns and verifying field strength.*
 
 #### Theory & Function
 While a standard antenna captures a signal to send to a radio or television, this specific hardware is used for Antenna Training and Measurement.
@@ -252,7 +248,7 @@ While a standard antenna captures a signal to send to a radio or television, thi
 #### Propagation Pattern
 ![Folded Dipole with Detector)](Types_of_Antenna/Folded-Dipole-Antenna-Radiation-Pattern.jpg)
 
-Figure 1.4: Folded Dipole with Detector Antenna Propagation Pattern.*
+*Figure 1.20: Folded Dipole with Detector Antenna Propagation Pattern.*
 The pattern is identical to the Folded Dipole we covered previously.
 - Standard Toroid: It has a "doughnut" shape, picking up signals best from the sides and having "nulls" (blind spots) at the very tips of the metal rods.
 - Polarization: It is linearly polarized. In your lab setup, if the transmitting antenna is vertical, this detector antenna must also be held vertically to get a reading.
@@ -263,7 +259,7 @@ The pattern is identical to the Folded Dipole we covered previously.
 
 ### Simple Dipole for Paraboloid Reflector
 ![Simple Dipole for Paraboloid Reflector](Types_of_Antenna/Simple-Dipole-for-Paraboloid-Reflector.jpg)
-Figure 1.5: Fabricated 7-Element Yagi-Uda Simple Array. This high-gain configuration features a single reflector, a simple dipole driven element, and five directors. The increased number of parasitic elements results in superior forward directivity and a highly compressed beamwidth, serving as an advanced model for long-range telecommunications study.*
+Figure 1.21: Simple Dipole Primary Radiator for Parabolic Reflector. This $\lambda/2$ dipole serves as the feed element at the focal point of a paraboloid system. It illustrates the transformation of a standard dipole radiation pattern into a high-gain, narrow-aperture beam through the use of geometric optics and reflective surfaces.*
 
 #### Theory & Function
 On its own, this is a standard half-wave ($\lambda/2$) dipole. However, in a laboratory kit, its purpose is to act as the Primary Radiator for a reflector system.
@@ -273,7 +269,7 @@ On its own, this is a standard half-wave ($\lambda/2$) dipole. However, in a lab
 #### Propagation Pattern
 ![Simple Dipole for Paraboloid Reflector](Types_of_Antenna/Simple-Dipole-for-Paraboloid-Reflector-Pattern.jpg)
 
-Figure 1.4: Simple Dipole for Paraboloid Reflector Antenna Propagation Pattern.*
+*Figure 1.22: Simple Dipole for Paraboloid Reflector Antenna Propagation Pattern.*
 To understand this antenna, you have to look at it in two stages:
 - Stage A: The Dipole Alone
 Without the dish, it has the standard Torus (Doughnut) pattern we discussed at the very beginning. It radiates energy equally in all directions perpendicular to the rod.
@@ -289,7 +285,7 @@ When you "plug" this dipole into the dish, the pattern changes into a highly dir
 
 ### Phased Array 2-Element (1/4 $\lambda$) Antenna
 ![Phased Array 2-Element (1/4 $\lambda$))](Types_of_Antenna/Phased-Array-2-Element-1-4.jpg)
-Figure 1.5: Fabricated (1/4 $\lambda$) Phased Array Prototype. This system consists of two dipole elements spaced a quarter-wavelength apart. It serves as a practical demonstration of beamforming and spatial interference, showing how phase-shifted signals can be utilized to synthesize a directional radiation pattern.*
+Figure 1.23: Fabricated (1/4 $\lambda$) Phased Array Prototype. This system consists of two dipole elements spaced a quarter-wavelength apart. It serves as a practical demonstration of beamforming and spatial interference, showing how phase-shifted signals can be utilized to synthesize a directional radiation pattern.*
 
 #### Theory & Function
 A phased array consists of two or more antennas (in this case, two dipoles) powered by the same source, but with a specific phase difference between the signals sent to each element.
@@ -299,7 +295,7 @@ A phased array consists of two or more antennas (in this case, two dipoles) powe
 #### Propagation Pattern
 ![Phased Array 2-Element (1/4 $\lambda$))](Types_of_Antenna/Phased-Array-2-Element-1-4-Propagation-Pattern.jpg)
 
-Figure 1.4:Phased Array 2-Element (1/4 $\lambda$) Antenna Propagation Pattern.*
+Figure 1.24:Phased Array 2-Element (1/4 $\lambda$) Antenna Propagation Pattern.*
 
 - Directional Beam: Unlike a single dipole that radiates 360°, this array focuses energy in a specific direction.
 - Front-to-Back Ratio: One of the key metrics for this antenna is how much more signal it sends forward compared to what "leaks" out the back.
@@ -312,7 +308,7 @@ Figure 1.4:Phased Array 2-Element (1/4 $\lambda$) Antenna Propagation Pattern.*
 
 ### Phased Array 2-Element (1/2 $\lambda$) Antenna
 ![Phased Array 2-Element (1/2 $\lambda$))](Types_of_Antenna/Phased-Array-2-Element-1-2.jpg)
-Figure 1.5: Fabricated $\lambda/2$ Phased Array Prototype. By utilizing half-wavelength spatial separation between radiators, this system demonstrates broadside directivity and high-gain bi-directional propagation. This model is essential for studying the transition from cardioid to multi-lobe interference patterns in array synthesis.*
+Figure 1.25: Fabricated $\lambda/2$ Phased Array Prototype. By utilizing half-wavelength spatial separation between radiators, this system demonstrates broadside directivity and high-gain bi-directional propagation. This model is essential for studying the transition from cardioid to multi-lobe interference patterns in array synthesis.*
 
 #### Theory & Function
 In this configuration, the two dipole elements are spaced exactly half a wavelength ($\lambda/2$) apart.
@@ -322,7 +318,7 @@ In this configuration, the two dipole elements are spaced exactly half a wavelen
 #### Propagation Pattern
 ![Phased Array 2-Element (1/2 $\lambda$))](Types_of_Antenna/Phased-Array-2-Element-1-2-Propagation-Pattern.jpg)
 
-Figure 1.4: Phased Array 2-Element (1/2 $\lambda$) Antenna Propagation Pattern.*
+Figure 1.26: Phased Array 2-Element (1/2 $\lambda$) Antenna Propagation Pattern.*
 The 2D pattern for $\lambda/2$ spacing (with elements fed in phase) is typically a Bi-directional pattern.
 - Main Lobes: It produces two strong lobes perpendicular to the line connecting the two antennas (Broadside).
 - Sharp Nulls: It creates very sharp "dead zones" along the axis of the array.
@@ -335,7 +331,7 @@ The 2D pattern for $\lambda/2$ spacing (with elements fed in phase) is typically
 
 ### Combined Collinear Array Antenna
 ![Combined Collinear Array )](Types_of_Antenna/Combined-Collinear-Array.jpg)
-Figure 1.5: Fabricated Combined Collinear Array. This prototype features vertically stacked dipole elements integrated onto a single feed-board. By synchronizing the phase of multiple radiators, the design achieves high omnidirectional gain by compressing the vertical beamwidth, making it an ideal model for terrestrial base station analysis.*
+*Figure 1.27: Fabricated Combined Collinear Array. This prototype features vertically stacked dipole elements integrated onto a single feed-board. By synchronizing the phase of multiple radiators, the design achieves high omnidirectional gain by compressing the vertical beamwidth, making it an ideal model for terrestrial base station analysis.*
 
 #### Theory & Function
 A collinear array consists of two or more dipole elements (the horizontal rods in your photo) arranged in a straight line—specifically, stacked on top of each other.
@@ -345,7 +341,7 @@ A collinear array consists of two or more dipole elements (the horizontal rods i
 #### Propagation Pattern
 ![Combined Collinear Array )](Types_of_Antenna/Combined-Collinear-Array-Pattern.png)
 
-Figure 1.4:Combined Collinear Array Antenna Propagation Pattern.*
+*Figure 1.28:Combined Collinear Array Antenna Propagation Pattern.*
 The 2D pattern for a collinear array is Omnidirectional in the horizontal plane, but highly Directional in the vertical plane.
 - Flattened Toroid: Imagine taking the standard "doughnut" of a single dipole and stepping on it. The pattern becomes a very flat, high-gain disk.
 - High Gain: Because energy that would have gone into the sky or the ground is redirected toward the horizon, the "gain" (signal reach) is significantly higher than a single dipole.
@@ -358,7 +354,7 @@ The 2D pattern for a collinear array is Omnidirectional in the horizontal plane,
 
 ### Broadside Array (Multi-Element) Antenna
 ![Broadside Array (Multi-Element) Antenna)](Types_of_Antenna/Broadside-Array-.jpg)
-Figure 1.5: Fabricated 5-Element Broadside Array. This high-gain configuration utilizes multiple parallel dipoles fed in-phase to synthesize a highly directive radiation beam. This prototype demonstrates the principle of narrow-beamwidth propagation perpendicular to the array axis, a core concept in long-range telecommunications and radar systems.*
+*Figure 1.29: Fabricated 5-Element Broadside Array. This high-gain configuration utilizes multiple parallel dipoles fed in-phase to synthesize a highly directive radiation beam. This prototype demonstrates the principle of narrow-beamwidth propagation perpendicular to the array axis, a core concept in long-range telecommunications and radar systems.*
 
 #### Theory & Function
 A broadside array consists of several identical dipole elements arranged in a parallel line.
@@ -368,7 +364,7 @@ A broadside array consists of several identical dipole elements arranged in a pa
 #### Propagation Pattern
 ![Broadside Array (Multi-Element) Antenna)](Types_of_Antenna/Broadside-Array-Pattern.jpg)
 
-Figure 1.4:Broadside Array (Multi-Element) Antenna Propagation Pattern.*
+*Figure 1.30:Broadside Array (Multi-Element) Antenna Propagation Pattern.*
 The 2D radiation pattern of a broadside array is highly directional.
 - Narrow Main Lobes: It produces two very sharp, narrow lobes pointing "broadside".
 - High Directivity: The more elements you add to a broadside array, the narrower and more "laser-like" the beam becomes.
@@ -381,7 +377,7 @@ The 2D radiation pattern of a broadside array is highly directional.
 
 ### Log-Periodic Antenna (LPDA)
 ![Log-Periodic Antenna (LPDA)](Types_of_Antenna/Log-Periodic-Antenna-(LPDA).jpg)
-Figure 1.5: Fabricated Log-Periodic Dipole Array (LPDA). This wideband radiator utilizes logarithmic scaling of element lengths and spacings to achieve frequency-independent performance. It is a critical model for analyzing broadband impedance matching and end-fire directional propagation across multiple octaves.*
+*Figure 1.31: Fabricated Log-Periodic Dipole Array (LPDA). This wideband radiator utilizes logarithmic scaling of element lengths and spacings to achieve frequency-independent performance. It is a critical model for analyzing broadband impedance matching and end-fire directional propagation across multiple octaves.*
 
 #### Theory & Function
 While most antennas are designed to work perfectly at one specific frequency, the Log-Periodic antenna is designed to work over an extremely wide bandwidth.
@@ -391,7 +387,7 @@ While most antennas are designed to work perfectly at one specific frequency, th
 #### Propagation Pattern
 ![Broadside Array (Multi-Element) Antenna)](Types_of_Antenna/Log-Periodic-Antenna-(LPDA)-Pattern.png)
 
-Figure 1.4:Log-Periodic Antenna (LPDA) Propagation Pattern.*
+*Figure 1.32:Log-Periodic Antenna (LPDA) Propagation Pattern.*
 The LPDA is a Directional Antenna with very stable performance.
 - End-Fire Radiation: The signal is radiated off the "small end" of the antenna (the side with the shortest elements).
 - Constant Gain: Unlike other antennas that lose efficiency as you move away from their center frequency, the LPDA maintains steady gain (typically 7–10 dBi) across a huge range.
@@ -405,7 +401,7 @@ The LPDA is a Directional Antenna with very stable performance.
 
 ### 3-Element Yagi-Uda Antenna (Folded Dipole)
 ![3-Element Yagi-Uda Antenna (Folded Dipole)](Types_of_Antenna/3-Element-Yagi-Uda-Antenna-Folded-Dipole.jpg)
-Figure 1.5: Fabricated 3-Element Yagi-Uda Antenna. This directional array utilizes a folded dipole as the driven element, supported by a parasitic reflector and director. The configuration demonstrates the principle of parasitic coupling to achieve high forward gain and a superior front-to-back ratio for targeted signal reception.*
+*Figure 1.33: Fabricated 3-Element Yagi-Uda Antenna. This directional array utilizes a folded dipole as the driven element, supported by a parasitic reflector and director. The configuration demonstrates the principle of parasitic coupling to achieve high forward gain and a superior front-to-back ratio for targeted signal reception.*
 
 ### Theory & Function
 A Yagi-Uda antenna works through Parasitic Coupling. Only one element (the folded dipole in the middle) is actually connected to the power source. The other two metal rods are "parasitic," meaning they catch the signal from the middle rod and re-radiate it to shape the beam.
@@ -415,7 +411,7 @@ A Yagi-Uda antenna works through Parasitic Coupling. Only one element (the folde
 ### Propagation Pattern
 ![3-Element Yagi-Uda Antenna (Folded Dipole))](Types_of_Antenna/3-Element-Yagi-Uda-Antenna-Folded-Dipole-Pattern.png)
 
-Figure 1.4: 3-Element Yagi-Uda Antenna (Folded Dipole) Propagation Pattern.*
+*Figure 1.34: 3-Element Yagi-Uda Antenna (Folded Dipole) Propagation Pattern.*
 The Yagi-Uda is a highly Directional (Unidirectional) antenna.
 - Main Lobe: It produces a strong, focused beam pointing out from the "director" side (the side with the shortest rod).
 - Front-to-Back Ratio: It is very efficient at ignoring signals coming from behind the antenna, making it perfect for targeting a specific transmitter.
@@ -428,7 +424,7 @@ The Yagi-Uda is a highly Directional (Unidirectional) antenna.
 
 ### 5-Element Yagi-Uda Antenna (Folded Dipole)
 ![5-Element Yagi-Uda Antenna (Folded Dipole)](Types_of_Antenna/5-Element-Yagi-Uda-Antenna-Folded-Dipole.jpg)
-Figure 1.5: Fabricated 5-Element Yagi-Uda Array. This high-gain directional antenna features a folded dipole driven element supplemented by one reflector and three directors. The multi-director configuration significantly narrows the beamwidth and increases forward directivity, making it an ideal model for studying high-precision point-to-point RF links.*
+*Figure 1.35: Fabricated 5-Element Yagi-Uda Array. This high-gain directional antenna features a folded dipole driven element supplemented by one reflector and three directors. The multi-director configuration significantly narrows the beamwidth and increases forward directivity, making it an ideal model for studying high-precision point-to-point RF links.*
 
 #### Theory & Function
 This antenna works on the same parasitic principle as the 3-element version but adds more "lenses" to the front to sharpen the beam further.
@@ -439,7 +435,7 @@ This antenna works on the same parasitic principle as the 3-element version but 
 #### Propagation Pattern
 ![5-Element Yagi-Uda Antenna (Folded Dipole))](Types_of_Antenna/3-Element-Yagi-Uda-Antenna-Folded-Dipole-Pattern.png)
 
-Figure 1.4: 5-Element Yagi-Uda Antenna (Folded Dipole) Propagation Pattern.*
+*Figure 1.36: 5-Element Yagi-Uda Antenna (Folded Dipole) Propagation Pattern.*
 Adding more directors significantly changes the 2D polar plot compared to the 3-element version.
 - Narrower Main Lobe: The "nose" of the pattern is much sharper and longer. This means the antenna is more sensitive but must be aimed more accurately at the target.
 - Higher Gain: Because the energy is concentrated into a smaller area, the signal strength in that specific direction is much higher.
@@ -452,7 +448,7 @@ Adding more directors significantly changes the 2D polar plot compared to the 3-
 
 ### 5-Element Yagi-Uda Simple Antenna
 ![5-Element Yagi-Uda Simple Antenna)](Types_of_Antenna/5-Element-Yagi-Uda-Simple-Antenna.jpg)
-Figure 1.5: Fabricated 5-Element Yagi-Uda Simple Array. This model utilizes a standard straight-dipole driven element supplemented by one reflector and three directors. The design demonstrates high forward directivity and high-precision beamforming, serving as a primary reference for parasitic element interaction and impedance matching in directive arrays*
+*Figure 1.37: Fabricated 5-Element Yagi-Uda Simple Array. This model utilizes a standard straight-dipole driven element supplemented by one reflector and three directors. The design demonstrates high forward directivity and high-precision beamforming, serving as a primary reference for parasitic element interaction and impedance matching in directive arrays*
 
 #### Theory & Function
 This antenna operates through electromagnetic coupling between a single powered element and four "parasitic" (unpowered) elements. By carefully choosing the lengths and spacing of these rods, the antenna forces the radio waves into a narrow, high-power beam.
@@ -462,7 +458,7 @@ This antenna operates through electromagnetic coupling between a single powered 
 #### Propagation Pattern
 ![5-Element Yagi-Uda Simple Antenna)](Types_of_Antenna/5-Element-Yagi-Uda-Simple-Antenna-Pattern.png)
 
-Figure 1.4: 5-Element Yagi-Uda Simple Antenna Propagation Pattern.*
+*Figure 1.38: 5-Element Yagi-Uda Simple Antenna Propagation Pattern.*
 The radiation pattern is a Directive Beam pointing out from the smallest rod (the front director).
 - Sharp Directivity: Because it has five total elements, the main lobe is very narrow compared to a standard dipole.
 - Minor Lobes: You will notice small "bumps" or side lobes in the 2D plot. These occur because the cancellation of waves is not perfect at every angle.
@@ -475,7 +471,7 @@ The radiation pattern is a Directive Beam pointing out from the smallest rod (th
 
 ### 7-Element Yagi-Uda Simple Antenna
 ![7-Element Yagi-Uda Simple Antenna](Types_of_Antenna/7-Element-Yagi-Uda-Simple-Antenna.jpg)
-Figure 1.5: Fabricated 7-Element Yagi-Uda Simple Array. This high-gain configuration features a single reflector, a simple dipole driven element, and five directors. The increased number of parasitic elements results in superior forward directivity and a highly compressed beamwidth, serving as an advanced model for long-range telecommunications study.*
+*Figure 1.39: Fabricated 7-Element Yagi-Uda Simple Array. This high-gain configuration features a single reflector, a simple dipole driven element, and five directors. The increased number of parasitic elements results in superior forward directivity and a highly compressed beamwidth, serving as an advanced model for long-range telecommunications study.*
 
 #### Theory & Function
 As you add more elements to a Yagi antenna, you are essentially adding more "lenses" to focus the beam. A 7-element version provides a significantly tighter radiation pattern than the 3 or 5-element versions we've already covered.
@@ -486,7 +482,7 @@ As you add more elements to a Yagi antenna, you are essentially adding more "len
 #### Propagation Pattern
 ![7-Element Yagi-Uda Simple Antenna](Types_of_Antenna/7-Element-Yagi-Uda-Simple-Antenna-Pattern.png)
 
-Figure 1.4: 7-Element Yagi-Uda Simple Antenna Propagation Pattern.*
+*Figure 1.40: 7-Element Yagi-Uda Simple Antenna Propagation Pattern.*
 This antenna produces a highly directive "pencil beam" pattern.
 - Ultra-Narrow Main Lobe: The beam is much thinner and reaches much further than the previous models.
 - High Directivity: This antenna has excellent "gain," meaning it can pick up extremely weak signals, provided it is pointed exactly at the source.
@@ -500,7 +496,7 @@ This antenna produces a highly directive "pencil beam" pattern.
 
 ### Rhombus Antenna
 ![Rhombus Antenna](Types_of_Antenna/Rhombus-Antenna.jpg)
-Figure 1.5: Fabricated Rhombus (Diamond) Antenna. This traveling-wave radiator utilizes a non-resonant design to achieve high directivity. By utilizing a termination resistor at the apex, the antenna is converted from a bidirectional to a unidirectional system, providing a high-gain 'pencil beam' suitable for long-range point-to-point links.*
+*Figure 1.41: Fabricated Rhombus (Diamond) Antenna. This traveling-wave radiator utilizes a non-resonant design to achieve high directivity. By utilizing a termination resistor at the apex, the antenna is converted from a bidirectional to a unidirectional system, providing a high-gain 'pencil beam' suitable for long-range point-to-point links.*
 
 #### Theory & Function
 A Rhombus antenna is essentially two V-antennas joined together. It is a non-resonant traveling-wave antenna, meaning the signal moves along the wires rather than bouncing back and forth like in a dipole.
@@ -511,7 +507,7 @@ A Rhombus antenna is essentially two V-antennas joined together. It is a non-res
 #### Propagation Pattern
 ![Rhombus Antenna](Types_of_Antenna/Rhombus-Antenna-Pattern.gif)
 
-Figure 1.4: Rhombus Antenna Propagation Pattern.*
+*Figure 1.42: Rhombus Antenna Propagation Pattern.*
 The Rhombus antenna produces one of the most "pointed" patterns of any wire-based antenna.
 - Alignment: The main lobe points directly out of the "nose" of the diamond (away from the feed point).
 - Main Lobe: It is extremely narrow, making it excellent for long-distance communication where the target location is fixed.
@@ -524,7 +520,7 @@ The Rhombus antenna produces one of the most "pointed" patterns of any wire-base
 
 ### Loop Antenna
 ![Loop Antenna](Types_of_Antenna/Loop-Antenna.jpg)
-Figure 1.5: Fabricated Square Loop Antenna. This magnetic dipole element is designed to interface with the H-field component of electromagnetic radiation. It exhibits a characteristic figure-eight radiation pattern with sharp nulls along the loop's axis, making it a primary model for studying inductive coupling, NFC technology, and radio direction finding (RDF) techniques.*
+Figure 1.43: Fabricated Square Loop Antenna. This magnetic dipole element is designed to interface with the H-field component of electromagnetic radiation. It exhibits a characteristic figure-eight radiation pattern with sharp nulls along the loop's axis, making it a primary model for studying inductive coupling, NFC technology, and radio direction finding (RDF) techniques.*
 
 #### Theory & Function
 A loop antenna is essentially a coil of wire. While most antennas (like dipoles) are "Electric Dipoles," the loop is a Magnetic Dipole.
@@ -534,7 +530,7 @@ A loop antenna is essentially a coil of wire. While most antennas (like dipoles)
 #### Propagation Pattern 
 ![Loop Antenna](Types_of_Antenna/Loop-Antenna-Pattern.jpg)
 
-Figure 1.4: Loop Antenna Propagation Pattern.*
+*Figure 1.44: Loop Antenna Propagation Pattern.*
 The loop antenna has a very unique and useful "Figure-8" pattern, but it is different from a dipole.
 - The Donut Hole: The signal is strongest in the plane of the loop (along the edges of the square).
 - The Sharp Null: There is a "dead zone" or null directly through the center of the loop. If you point the "hole" of the loop at a transmitter, the signal will vanish.
@@ -547,7 +543,7 @@ The loop antenna has a very unique and useful "Figure-8" pattern, but it is diff
 
 ### Slot Antenna
 ![Slot Antenna](Types_of_Antenna/Slot-Antenna.jpg)
-Figure 1.5: Fabricated Slot Antenna. This aperture-type radiator illustrates Babinet's Principle of complementary structures. By exciting a rectangular opening in a conductive plane, the antenna produces a radiation pattern similar to a dipole but with orthogonal polarization. Its low-profile design is representative of antennas used in aerodynamic and conformal surface applications.*
+*Figure 1.45: Fabricated Slot Antenna. This aperture-type radiator illustrates Babinet's Principle of complementary structures. By exciting a rectangular opening in a conductive plane, the antenna produces a radiation pattern similar to a dipole but with orthogonal polarization. Its low-profile design is representative of antennas used in aerodynamic and conformal surface applications.*
 
 #### Theory & Function
 A slot antenna consists of a metal surface (in this case, the copper on your PCB) with a narrow rectangular slot cut out of it. When you apply an RF voltage across the narrowest part of the slot, it radiates electromagnetic waves.
@@ -557,7 +553,7 @@ A slot antenna consists of a metal surface (in this case, the copper on your PCB
 #### Propagation Pattern
 ![Slot Antenna](Types_of_Antenna/Slot-Antenna-Pattern.png)
 
-Figure 1.4: Slot Antenna Propagation Pattern.*
+*Figure 1.46: Slot Antenna Propagation Pattern.*
 Because the slot is complementary to a dipole, its radiation pattern is almost identical in shape to the "doughnut" torus, but with one major twist.
 - Omnidirectional (in one plane): Just like a dipole, it radiates equally in all directions perpendicular to the slot.
 - The "Shadow" Effect: Because your antenna is etched on a single-sided PCB, the pattern is slightly more "hemispherical" (radiating more strongly out of the front than through the back of the board).
@@ -570,7 +566,7 @@ Because the slot is complementary to a dipole, its radiation pattern is almost i
 
 ### Ground Plane Antenna
 ![Ground Plane Antenna](Types_of_Antenna/Ground-Plane-Antenna.jpg)
-Figure 1.5: Fabricated Ground Plane Antenna. This design utilizes a central feed point supplemented by four radial elements that serve as an artificial ground (counterpoise). This configuration stabilizes the antenna's impedance and provides a $360^{\circ}$ omnidirectional radiation pattern in the horizontal plane, making it a foundational model for mobile and base station communications.*
+Figure 1.47: Fabricated Ground Plane Antenna. This design utilizes a central feed point supplemented by four radial elements that serve as an artificial ground (counterpoise). This configuration stabilizes the antenna's impedance and provides a $360^{\circ}$ omnidirectional radiation pattern in the horizontal plane, making it a foundational model for mobile and base station communications.*
 
 #### Theory & Function
 A standard monopole antenna needs a large metallic surface (like a car roof or the Earth) to work properly. When that isn't available, we use a Ground Plane Antenna.
@@ -580,7 +576,7 @@ A standard monopole antenna needs a large metallic surface (like a car roof or t
 #### Propagation Pattern
 ![Ground Plane Antenna](Types_of_Antenna/Ground-Plane-Antenna-Pattern.png)
 
-Figure 1.4: Ground Plane Antenna Propagation Pattern.*
+*Figure 1.48: Ground Plane Antenna Propagation Pattern.*
 The Ground Plane antenna is Omnidirectional in the horizontal plane but has a specific shape in the vertical plane.
 - Horizontal View (Top-Down): A perfect circle. It radiates equally in all directions ($360^{\circ}$), which is why it is used for broadcast stations.
 - Vertical View (Side-On): It looks like two lobes tilted slightly upward. The radials "push" the signal toward the horizon, which is exactly where you want it for long-distance communication.
@@ -590,4 +586,6 @@ The Ground Plane antenna is Omnidirectional in the horizontal plane but has a sp
 - Marine Radio: Boats use them because the water acts as a natural ground, but the radials ensure a stable signal even in rough seas.
 - Aviation: Airport towers use ground plane arrays to talk to pilots in every direction.
 - Base Stations: Used for "Citizen's Band" (CB) radio and Ham radio hobbyists.
+
+## Part 2: Waveguide and its parts
 
