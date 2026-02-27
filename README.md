@@ -587,6 +587,50 @@ The Ground Plane antenna is Omnidirectional in the horizontal plane but has a sp
 - Aviation: Airport towers use ground plane arrays to talk to pilots in every direction.
 - Base Stations: Used for "Citizen's Band" (CB) radio and Ham radio hobbyists.
 
+### Sample Antenna Setup
+#### Components and Equipments
+- Matching Stub for antenna trainer
+- RF Detector
+- Oscilloscope
+- Signal Generator
+- Coaxial Cable
+- Transmitting Antenna
+- Transmitting Antenna Mast
+- Receiving Antenna
+- Receiving Antenna Mast
+
+#### Transmiter Setup
+![Matching Stub for antenna trainer)](Types_of_Antenna/Matching-Stub-for-Antenna-Trainer.jpg)
+
+*Figure 1.49: Matching Stub for antenna trainer.*
+![Matching Stub for antenna trainer)](Types_of_Antenna/Transmitting-Mast.jpg)
+
+*Figure 1.50: Transmitting Antenna Mast.*
+![Matching Stub for antenna trainer)](Types_of_Antenna/Transmitting-setup2.jpg)
+
+*Figure 1.51: Transmitting Antenna Setup.*
+![Matching Stub for antenna trainer)](Types_of_Antenna/Transmitting-setup1.jpg)
+
+*Figure 1.52: Transmitting Antenna Setup.*
+
+
+#### Receiver Setup
+![Receiving Antenna Mast](Types_of_Antenna/Receiving-Mast.jpg)
+
+*Figure 1.53: Receiving Antenna Mast.*
+![RF Detector](Types_of_Antenna/RF-detector.jpg)
+
+*Figure 1.54: RF Detector.*
+![Receving Antenna Setup](Types_of_Antenna/Receiving-setup.jpg)
+
+*Figure 1.55: Receving Antenna Setup.*
+
+#### Sample Output
+![Propagation Modes (TE vs. TM)](Waveguide/TE-TM-TEM.png)
+
+*Figure 1.1: TE,TM,TEM Propagation Modes.*
+
+
 ## Part 2: Waveguide and its parts
 Waveguides represent the primary medium for low-loss, high-power microwave transmission. By constraining electromagnetic fields within a hollow metallic structure, we eliminate radiation leakage and dielectric losses. Understanding the cutoff frequency and the $TE_{10}$ propagation mode is essential for analyzing the passive components found in X-band microwave benches.
 ### Fundamentals of Waveguides
@@ -604,11 +648,28 @@ Since there is no center wire, waves cannot travel in a straight line like they 
 - TM (Transverse Magnetic): The magnetic field is entirely perpendicular to the direction of travel.
 - TEM (Transverse Electromagnetic): This mode cannot exist in a hollow waveguide because it requires two separate conductors (like a coaxial cable).
 
-![antenna field regions](Waveguide/TE-TM-TEM.png)
+![Propagation Modes (TE vs. TM)](Waveguide/TE-TM-TEM.png)
 
 *Figure 2.1: TE,TM,TEM Propagation Modes.*
 
-
+### The Microwave Source & Modulation
+These components create the high-frequency signal that will travel through the "pipes."
+- Gunn Oscillator ($9-11\text{ GHz}$, $P = 15\text{ mW}$): The "heart" of the bench. It uses a Gunn diode to convert DC power into microwave energy.
+- PIN Modulator: This is used to "pulse" the microwave signal. By applying a square wave, you can turn the signal on and off rapidly, which is necessary for the crystal detector to "read" the signal on an oscilloscope or VSWR meter.$1\text{ kHz}$
+- Square Generator: Provides the modulation signal (pulse) for the PIN modulator.
+- Power Supply ($12\text{ V}$): Provides the necessary DC voltage to drive the Gunn oscillator.
+### Signal Control & Modification
+Once the signal is generated, these parts control its strength and "cleanliness."
+- Variable Attenuator ($0-20\text{ dB}$): Acts like a volume knob. It uses a resistive "vane" to soak up some of the microwave energy to protect sensitive components downstream.
+- Fixed Attenuator ($20\text{ dB}$): Provides a constant, precise reduction in signal strength.
+- Frequency Meter ($8.2-12.4\text{ GHz}$): A high-precision mechanical cavity. When you turn the dial to the signal's frequency, it "dips" (absorbs a tiny bit of power), allowing you to read the exact frequency.
+- Isolator (Optional but common): Often placed right after the source to ensure waves only move forward and don't bounce back and burn out the Gunn Diode.
+### Measurement & Detection
+This is where the "science" happens—measuring how waves behave inside the guide.
+- Slotted Line ($8.2-12.4\text{ GHz}$): The most important measurement tool. It has a tiny probe that slides along a slot to find the "peaks" and "valleys" of the standing wave.
+- Slide Screw Tuner: Used for "Impedance Matching." You move a metallic screw into the waveguide to cancel out reflections and achieve a VSWR close to $1.0$.
+- Crystal Detector: Converts the microwave (RF) signal back into a low-frequency voltage that you can see on a meter or screen.
+- VSWR Meter / Crystal Detector Output: This is where you calculate the Voltage Standing Wave Ratio.
 
 
 
