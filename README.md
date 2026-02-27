@@ -240,7 +240,28 @@ Figure 1.4: Folded Dipole Antenna Propagation Pattern.*
 - Yagi-Uda Arrays: It is the most common "driven element" in Yagi antennas (like those on old houses). The high impedance of the folded dipole compensates for the impedance-lowering effects caused by the nearby director and reflector elements.
 - FM Radio: Preferred for FM reception because its wider bandwidth can easily cover the entire 88–108 MHz broadcast band without significant signal loss.
 
-### Phased Array 2-Element (1/4 $\lambda$)
+### Folded Dipole with Detector Antenna
+![Folded Dipole with Detector )](Types_of_Antenna/Folded-Dipole-with-Detector.jpg)
+Figure 1.5: Folded Dipole with Integrated Diode Detector. This specialized receiving element incorporates a rectification circuit to convert incident RF energy into a measurable DC voltage. It serves as a diagnostic tool for analyzing radiation patterns and verifying field strength.*
+
+#### Theory & Function
+While a standard antenna captures a signal to send to a radio or television, this specific hardware is used for Antenna Training and Measurement.
+- The Detector Circuit: If you look closely at the center of the green PCB, you will see a small diode (often a Schottky diode). This diode "rectifies" the incoming RF signal, turning the alternating current (AC) of the radio wave into a direct current (DC).
+- Signal Strength Indicator: This hardware is designed to be connected to a simple multimeter or a micro-ammeter rather than a receiver. The more signal the antenna catches, the higher the voltage reading on your meter.
+- Resonant Loop: It maintains the same folded dipole properties: high impedance ($300\ \Omega$) and wide bandwidth, making it very sensitive to signals in its target frequency range.
+#### Propagation Pattern
+![Folded Dipole with Detector)](Types_of_Antenna/Folded-Dipole-Antenna-Radiation-Pattern.jpg)
+
+Figure 1.4: Folded Dipole with Detector Antenna Propagation Pattern.*
+The pattern is identical to the Folded Dipole we covered previously.
+- Standard Toroid: It has a "doughnut" shape, picking up signals best from the sides and having "nulls" (blind spots) at the very tips of the metal rods.
+- Polarization: It is linearly polarized. In your lab setup, if the transmitting antenna is vertical, this detector antenna must also be held vertically to get a reading.
+#### Industrial Applications
+- Field Strength Metering: Engineers use tools like this to walk around a transmitter and "map" where the signal is strong or weak.
+- Educational Labs: This is the "receiver" used in classroom experiments. You set up a transmitter, place this detector a few meters away, and rotate it to physically see the voltage change as the antenna pattern moves.
+- EMC Testing: Used to detect "leaky" electronic equipment that might be accidentally broadcasting interference.
+
+### Phased Array 2-Element (1/4 $\lambda$) Antenna
 ![Phased Array 2-Element (1/4 $\lambda$))](Types_of_Antenna/Phased-Array-2-Element-1-4.jpg)
 Figure 1.5: Fabricated (1/4 $\lambda$) Phased Array Prototype. This system consists of two dipole elements spaced a quarter-wavelength apart. It serves as a practical demonstration of beamforming and spatial interference, showing how phase-shifted signals can be utilized to synthesize a directional radiation pattern.*
 
@@ -263,7 +284,7 @@ Figure 1.4:Phased Array 2-Element (1/4 $\lambda$) Antenna Propagation Pattern.*
 - Starlink & Satellite Internet: The flat dishes used for satellite internet are sophisticated phased arrays that track satellites moving across the sky without a motor.
 - Aviation: Used in Instrument Landing Systems (ILS) to provide a precise directional path for aircraft to follow during landing.
 
-### Phased Array 2-Element (1/2 $\lambda$)
+### Phased Array 2-Element (1/2 $\lambda$) Antenna
 ![Phased Array 2-Element (1/2 $\lambda$))](Types_of_Antenna/Phased-Array-2-Element-1-2.jpg)
 Figure 1.5: Fabricated $\lambda/2$ Phased Array Prototype. By utilizing half-wavelength spatial separation between radiators, this system demonstrates broadside directivity and high-gain bi-directional propagation. This model is essential for studying the transition from cardioid to multi-lobe interference patterns in array synthesis.*
 
@@ -286,7 +307,7 @@ The 2D pattern for $\lambda/2$ spacing (with elements fed in phase) is typically
 - Radio Astronomy: Used in interferometer arrays to create highly sensitive "viewing" windows into specific parts of the sky.
 - Search Radar: Older radar systems used this spacing to create narrow vertical "fans" of energy to detect aircraft altitude.
 
-### Combined Collinear Array 
+### Combined Collinear Array Antenna
 ![Combined Collinear Array )](Types_of_Antenna/Combined-Collinear-Array.jpg)
 Figure 1.5: Fabricated Combined Collinear Array. This prototype features vertically stacked dipole elements integrated onto a single feed-board. By synchronizing the phase of multiple radiators, the design achieves high omnidirectional gain by compressing the vertical beamwidth, making it an ideal model for terrestrial base station analysis.*
 
@@ -309,7 +330,75 @@ The 2D pattern for a collinear array is Omnidirectional in the horizontal plane,
 - Air Traffic Control: Used to communicate with aircraft at long distances while they are at a specific altitude.
 - Marine Radio: Used on ships to ensure the signal reaches the horizon across the water without wasting energy pointing at the sky.
 
+### Broadside Array (Multi-Element) Antenna
+![Broadside Array (Multi-Element) Antenna)](Types_of_Antenna/Broadside-Array-.jpg)
+Figure 1.5: Fabricated 5-Element Broadside Array. This high-gain configuration utilizes multiple parallel dipoles fed in-phase to synthesize a highly directive radiation beam. This prototype demonstrates the principle of narrow-beamwidth propagation perpendicular to the array axis, a core concept in long-range telecommunications and radar systems.*
 
+#### Theory & Function
+A broadside array consists of several identical dipole elements arranged in a parallel line.
+- Principal of Operation: All elements in the array are fed with signals of the same phase and amplitude.
+- The "Broadside" Effect: Because the signals are perfectly synchronized, the electromagnetic waves add together most strongly in the direction perpendicular (at a right angle) to the line where the antennas are mounted.
+- Aperture Synthesis: By using five elements instead of one, you create a much larger "electrical eye." This allows the antenna to pick up very weak signals that a single dipole would miss.
+#### Propagation Pattern
+![Broadside Array (Multi-Element) Antenna)](Types_of_Antenna/Broadside-Array-Pattern.jpg)
+
+Figure 1.4:Broadside Array (Multi-Element) Antenna Propagation Pattern.*
+The 2D radiation pattern of a broadside array is highly directional.
+- Narrow Main Lobes: It produces two very sharp, narrow lobes pointing "broadside".
+- High Directivity: The more elements you add to a broadside array, the narrower and more "laser-like" the beam becomes.
+- Side Lobes: In addition to the main beams, you will see smaller "side lobes." These are minor areas of radiation that occur because the interference isn't perfectly destructive at every single angle.
+#### Industrial Applications
+- Radio Astronomy: Huge rows of dipoles are used to create extremely narrow "listening" beams to track stars and galaxies.
+- Long-Range Radar: Used in early-warning systems to detect objects hundreds of miles away by focusing all energy into a flat, wide slice of the sky.
+- Maritime Communications: Used at shore stations to communicate with ships far out at sea.
+- TV Transmission: High-power broadcast towers often use broadside arrays to ensure the signal is focused toward the population on the ground rather than wasted in the atmosphere.
+
+### Log-Periodic Antenna (LPDA)
+![Log-Periodic Antenna (LPDA)](Types_of_Antenna/Log-Periodic-Antenna-(LPDA).jpg)
+Figure 1.5: Fabricated Log-Periodic Dipole Array (LPDA). This wideband radiator utilizes logarithmic scaling of element lengths and spacings to achieve frequency-independent performance. It is a critical model for analyzing broadband impedance matching and end-fire directional propagation across multiple octaves.*
+
+#### Theory & Function
+While most antennas are designed to work perfectly at one specific frequency, the Log-Periodic antenna is designed to work over an extremely wide bandwidth.
+- The Scaling Principle: Notice how the dipole elements get progressively longer from left to right. The lengths and spacings follow a logarithmic ratio (often denoted as $\tau$).
+- Self-Selecting Active Region: When a specific frequency is sent to the antenna, only the dipoles that are approximately $\lambda/2$ in length for that frequency will "activate" and radiate. As the frequency changes, the "active region" simply slides up or down the antenna.
+- Frequency Independence: Because the geometry repeats itself logarithmically, the antenna's electrical characteristics (like impedance and gain) remain nearly constant across its entire operating range.
+#### Propagation Pattern
+![Broadside Array (Multi-Element) Antenna)](Types_of_Antenna/Log-Periodic-Antenna-(LPDA)-Pattern.png)
+
+Figure 1.4:Log-Periodic Antenna (LPDA) Propagation Pattern.*
+The LPDA is a Directional Antenna with very stable performance.
+- End-Fire Radiation: The signal is radiated off the "small end" of the antenna (the side with the shortest elements).
+- Constant Gain: Unlike other antennas that lose efficiency as you move away from their center frequency, the LPDA maintains steady gain (typically 7–10 dBi) across a huge range.
+- Moderate Beamwidth: It produces a clean, directional main lobe with minimal side lobes, making it excellent for point-to-point communication.
+#### Industrial Applications
+- Broadband TV Antennas: Many rooftop antennas use this design because they need to catch dozens of different channels spanning from 54 MHz to over 800 MHz.
+- Spectrum Monitoring: Engineers use LPDAs to scan the airwaves for unauthorized signals because one antenna can "listen" to almost everything.
+- EMC/EMI Testing: Used in labs to measure electronic interference across a wide frequency sweep without needing to swap antennas constantly.
+- Military Communications: Used for "frequency hopping" radios that change channels rapidly to avoid jamming.
+
+
+### 3-Element Yagi-Uda Antenna (Folded Dipole)
+![3-Element Yagi-Uda Antenna (Folded Dipole)](Types_of_Antenna/3-Element-Yagi-Uda-Antenna-Folded-Dipole.jpg)
+Figure 1.5: Fabricated 3-Element Yagi-Uda Antenna. This directional array utilizes a folded dipole as the driven element, supported by a parasitic reflector and director. The configuration demonstrates the principle of parasitic coupling to achieve high forward gain and a superior front-to-back ratio for targeted signal reception.*
+
+### Theory & Function
+A Yagi-Uda antenna works through Parasitic Coupling. Only one element (the folded dipole in the middle) is actually connected to the power source. The other two metal rods are "parasitic," meaning they catch the signal from the middle rod and re-radiate it to shape the beam.
+- The Reflector (Back Rod): This is the longest element. It acts like a mirror, reflecting electromagnetic waves back toward the front.
+- The Driven Element (Middle Folded Dipole): This is the "heart" of the antenna. Using a folded dipole here provides wider bandwidth and a higher input impedance , which helps counteract the impedance-dropping effect of the nearby parasitic elements.
+- The Director (Front Rod): This is the shortest element. It acts like a lens, focusing and "pulling" the signal in its direction.
+### Propagation Pattern
+![3-Element Yagi-Uda Antenna (Folded Dipole))](Types_of_Antenna/3-Element-Yagi-Uda-Antenna-Folded-Dipole-Pattern.png)
+
+Figure 1.4: 3-Element Yagi-Uda Antenna (Folded Dipole) Propagation Pattern.*
+The Yagi-Uda is a highly Directional (Unidirectional) antenna.
+- Main Lobe: It produces a strong, focused beam pointing out from the "director" side (the side with the shortest rod).
+- Front-to-Back Ratio: It is very efficient at ignoring signals coming from behind the antenna, making it perfect for targeting a specific transmitter.
+- Increased Gain: By adding these two parasitic elements, the gain increases significantly compared to a simple dipole, allowing you to pick up much weaker or more distant signals.
+#### Industrial Applications
+- Television Reception: The classic "roof antenna" seen on houses worldwide.
+- Amateur Radio: Used by operators to point signals toward specific countries or continents.
+- Point-to-Point Wireless: Used to bridge Wi-Fi or data signals between two buildings over long distances.
+- Search and Rescue: Used on handheld receivers to "home in" on the signal of an emergency beacon.
 
 
 
