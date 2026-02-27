@@ -400,9 +400,75 @@ The Yagi-Uda is a highly Directional (Unidirectional) antenna.
 - Point-to-Point Wireless: Used to bridge Wi-Fi or data signals between two buildings over long distances.
 - Search and Rescue: Used on handheld receivers to "home in" on the signal of an emergency beacon.
 
+### 5-Element Yagi-Uda Antenna (Folded Dipole)
+![5-Element Yagi-Uda Antenna (Folded Dipole)](Types_of_Antenna/5-Element-Yagi-Uda-Antenna-Folded-Dipole.jpg)
+Figure 1.5: Fabricated 5-Element Yagi-Uda Array. This high-gain directional antenna features a folded dipole driven element supplemented by one reflector and three directors. The multi-director configuration significantly narrows the beamwidth and increases forward directivity, making it an ideal model for studying high-precision point-to-point RF links.*
 
+#### Theory & Function
+This antenna works on the same parasitic principle as the 3-element version but adds more "lenses" to the front to sharpen the beam further.
+- The Reflector (1 element): The longest rod at the very back. It reflects waves forward, preventing signal loss to the rear.
+- The Driven Element (1 element): The Folded Dipole in the second position. It is the only part connected to the transmitter/receiver. Its folded design provides high impedance and better bandwidth.
+- The Directors (3 elements): The three progressively shorter rods at the front. Each director further focuses the electromagnetic energy, effectively "squeezing" the beam into a tighter, more powerful cone.
 
+#### Propagation Pattern
+![5-Element Yagi-Uda Antenna (Folded Dipole))](Types_of_Antenna/3-Element-Yagi-Uda-Antenna-Folded-Dipole-Pattern.png)
 
+Figure 1.4: 5-Element Yagi-Uda Antenna (Folded Dipole) Propagation Pattern.*
+Adding more directors significantly changes the 2D polar plot compared to the 3-element version.
+- Narrower Main Lobe: The "nose" of the pattern is much sharper and longer. This means the antenna is more sensitive but must be aimed more accurately at the target.
+- Higher Gain: Because the energy is concentrated into a smaller area, the signal strength in that specific direction is much higher.
+- Increased Side/Back Lobes: As you add more directors, the interference pattern becomes more complex, often resulting in more small "minor lobes" on the sides and back, though they remain much smaller than the main front beam.
+#### Industrial Applications
+- Long-Range Television: Used in rural areas far away from broadcast towers.
+- Wireless Data Links: Used for "point-to-point" bridges between buildings several kilometers apart.
+- Radio Direction Finding (RDF): Because the beam is so narrow, it is perfect for pinpointing the exact location of a radio transmitter.
+- Satellite Tracking: Small versions are used by hobbyists to track and communicate with Low Earth Orbit (LEO) satellites.
 
+### 5-Element Yagi-Uda Simple Antenna
+![5-Element Yagi-Uda Simple Antenna)](Types_of_Antenna/5-Element-Yagi-Uda-Simple-Antenna.jpg)
+Figure 1.5: Fabricated 5-Element Yagi-Uda Simple Array. This model utilizes a standard straight-dipole driven element supplemented by one reflector and three directors. The design demonstrates high forward directivity and high-precision beamforming, serving as a primary reference for parasitic element interaction and impedance matching in directive arrays*
 
+#### Theory & Function
+This antenna operates through electromagnetic coupling between a single powered element and four "parasitic" (unpowered) elements. By carefully choosing the lengths and spacing of these rods, the antenna forces the radio waves into a narrow, high-power beam.
+- The Driven Element (Simple Dipole): This is the straight rod in the second position from the back. It is a standard $\lambda/2$ dipole. Unlike the folded version, it has a lower input impedance (typically around $73\ \Omega$ in isolation), which is further lowered by the proximity of the other rods.
+- The Reflector (1 element): The longest rod at the back. It is slightly longer than a half-wavelength, causing it to act as an inductive surface that reflects energy forward.
+- The Directors (3 elements): The three progressively shorter rods at the front. These are slightly shorter than a half-wavelength, making them capacitive. They effectively "pull" the signal toward the front, sharpening the beam.
+#### Propagation Pattern
+![5-Element Yagi-Uda Simple Antenna)](Types_of_Antenna/5-Element-Yagi-Uda-Simple-Antenna-Pattern.png)
+
+Figure 1.4: 5-Element Yagi-Uda Simple Antenna Propagation Pattern.*
+The radiation pattern is a Directive Beam pointing out from the smallest rod (the front director).
+- Sharp Directivity: Because it has five total elements, the main lobe is very narrow compared to a standard dipole.
+- Minor Lobes: You will notice small "bumps" or side lobes in the 2D plot. These occur because the cancellation of waves is not perfect at every angle.
+- High Front-to-Back Ratio: This antenna is excellent at ignoring noise coming from behind the reflector.
+#### Industrial Applications
+- Rural TV Reception: Standard UHF/VHF antennas for houses far from city transmitters.
+- Ham Radio (DXing): Operators use these to bounce signals off the atmosphere to communicate with other continents.
+- Point-to-Point Bridges: Used to send internet signals between two tall towers or buildings.
+- Search and Rescue: Handheld Yagis are used to find emergency beacons by rotating the antenna until the signal is strongest.
+
+### 7-Element Yagi-Uda Simple Antenna
+![7-Element Yagi-Uda Simple Antenna)](Types_of_Antenna/7-Element-Yagi-Uda-Simple-Antenna.jpg)
+Figure 1.5: Fabricated 7-Element Yagi-Uda Simple Array. This high-gain configuration features a single reflector, a simple dipole driven element, and five directors. The increased number of parasitic elements results in superior forward directivity and a highly compressed beamwidth, serving as an advanced model for long-range telecommunications study.*
+
+#### Theory & Function
+As you add more elements to a Yagi antenna, you are essentially adding more "lenses" to focus the beam. A 7-element version provides a significantly tighter radiation pattern than the 3 or 5-element versions we've already covered.
+- The Reflector (1 element): The longest rod at the very back. It acts as the "back wall," ensuring no signal escapes behind the antenna.
+- The Driven Element (Simple Dipole): The second rod from the back. This is where the cable connects. Being a "simple" dipole, it is a straight split rod.
+- The Directors (5 elements): These are the five shorter rods at the front. By having five of them, the antenna "squeezes" the electromagnetic field into a very narrow, high-intensity beam.
+
+#### Propagation Pattern
+![7-Element Yagi-Uda Simple Antenna](Types_of_Antenna/7-Element-Yagi-Uda-Simple-Antenna-Pattern.png)
+
+Figure 1.4: 7-Element Yagi-Uda Simple Antenna Propagation Pattern.*
+This antenna produces a highly directive "pencil beam" pattern.
+- Ultra-Narrow Main Lobe: The beam is much thinner and reaches much further than the previous models.
+- High Directivity: This antenna has excellent "gain," meaning it can pick up extremely weak signals, provided it is pointed exactly at the source.
+- Complex Side Lobes: With seven elements, you will see more "ripples" or minor lobes in the 2D pattern, but they are very weak compared to the massive main forward beam.
+
+#### Industrial Applications
+- Point-to-Point Microwave Links: Used to bridge network connections between distant buildings or across valleys.
+- Satellite Ground Stations: Used by hobbyists and researchers to communicate with satellites as they pass overhead.
+- Radio Direction Finding (RDF): The narrow beam makes it incredibly accurate for "fox hunting" or locating a hidden transmitter.
+- Fringe Area TV Reception: Used in locations very far from the city to pull in weak broadcast signals.
 
