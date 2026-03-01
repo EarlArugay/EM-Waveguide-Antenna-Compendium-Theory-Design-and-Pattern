@@ -671,8 +671,7 @@ This is where the "science" happens—measuring how waves behave inside the guid
 - Crystal Detector: Converts the microwave (RF) signal back into a low-frequency voltage that you can see on a meter or screen.
 - VSWR Meter / Crystal Detector Output: This is where you calculate the Voltage Standing Wave Ratio.
 
-
-
-
-
 ## Resources
+* [Jump to Top](#table-of-contents)
+* [Antenna and Waveguide Resources (PDF)](Sources/Sources-EM-Waveguide-Antenna-Compendium-Theory-Design-and-Pattern.pdf)
+
