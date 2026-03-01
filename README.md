@@ -626,9 +626,22 @@ The Ground Plane antenna is Omnidirectional in the horizontal plane but has a sp
 *Figure 1.55: Receving Antenna Setup.*
 
 #### Sample Output
-![Propagation Modes (TE vs. TM)](Waveguide/TE-TM-TEM.png)
 
-*Figure 1.1: TE,TM,TEM Propagation Modes.*
+![Antenna Setup Sample Output](Types_of_Antenna/Antenna-Trainer-GenMod-Sample-Output.jpeg)
+
+*Figure 1.56: Antenna Trainer Modulator.*
+
+![Antenna Setup Sample Output](Types_of_Antenna/RF-Detector-Sample-Output.jpeg)
+
+*Figure 1.57: RF Detector Sample Output.*
+
+![Antenna Setup Sample Output](Types_of_Antenna/Oscilloscope-Sample-Output1.jpeg)
+
+*Figure 1.58: Antenna Setup Oscilloscope Sample Output.*
+
+![Antenna Setup Sample Output](Types_of_Antenna/Oscilloscope-Sample-Output2.jpeg)
+
+*Figure 1.59: Antenna Setup Oscilloscope Output.*
 
 
 ## Part 2: Waveguide and its parts
@@ -670,6 +683,19 @@ This is where the "science" happens—measuring how waves behave inside the guid
 - Slide Screw Tuner: Used for "Impedance Matching." You move a metallic screw into the waveguide to cancel out reflections and achieve a VSWR close to $1.0$.
 - Crystal Detector: Converts the microwave (RF) signal back into a low-frequency voltage that you can see on a meter or screen.
 - VSWR Meter / Crystal Detector Output: This is where you calculate the Voltage Standing Wave Ratio.
+
+### Waveguide Sample Setup
+![Waveguide Sample Setup](Waveguide/Power-Supply-and-Frequency-Generator.jpg)
+
+*Figure 2.2: Waveguide Power Supply and Frequency Generator.*
+
+![Waveguide Sample Setup](Waveguide/Waveguide-Setup1.jpg)
+
+*Figure 2.3: Waveguide Transmitter Sample Setup.*
+
+![Waveguide Sample Setup](Waveguide/Waveguide-Setup2.jpg)
+
+*Figure 2.4: Waveguide Reflected Sample Setup.*
 
 ## Resources
 * [Jump to Top](#table-of-contents)
